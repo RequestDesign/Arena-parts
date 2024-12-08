@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/fonts/sansation/stylesheet.css">
+    <link rel="stylesheet" href="style/header.css">
+    <link rel="stylesheet" href="style/footer.css">
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container-fluid">
+            <div class="header-content">
+              <a href="#">
+                <img class="header-logo" src="assets/images/header/logo-image.png" alt="">
+              </a>
+              <div class="header-content_catalog-btn">Каталог
+                <svg class="category-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M6.03332 1.66666H4.44999C2.62499 1.66666 1.66666 2.625 1.66666 4.44166V6.025C1.66666 7.84166 2.62499 8.8 4.44166 8.8H6.02499C7.84166 8.8 8.79999 7.84166 8.79999 6.025V4.44166C8.80832 2.625 7.84999 1.66666 6.03332 1.66666Z" fill="#1A5FBC"/>
+                    <path d="M15.5583 1.66666H13.975C12.1583 1.66666 11.2 2.625 11.2 4.44166V6.025C11.2 7.84166 12.1583 8.8 13.975 8.8H15.5583C17.375 8.8 18.3333 7.84166 18.3333 6.025V4.44166C18.3333 2.625 17.375 1.66666 15.5583 1.66666Z" fill="#1A5FBC"/>
+                    <path d="M15.5583 11.1917H13.975C12.1583 11.1917 11.2 12.15 11.2 13.9667V15.55C11.2 17.3667 12.1583 18.325 13.975 18.325H15.5583C17.375 18.325 18.3333 17.3667 18.3333 15.55V13.9667C18.3333 12.15 17.375 11.1917 15.5583 11.1917Z" fill="#1A5FBC"/>
+                    <path d="M6.03332 11.1917H4.44999C2.62499 11.1917 1.66666 12.15 1.66666 13.9667V15.55C1.66666 17.375 2.62499 18.3333 4.44166 18.3333H6.02499C7.84166 18.3333 8.79999 17.375 8.79999 15.5583V13.975C8.80832 12.15 7.84999 11.1917 6.03332 11.1917Z" fill="#1A5FBC"/>
+                </svg>                    
+              </div>
+                <ul class="navbar">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Доставка и оплата</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Контакты</a>
+                    </li>
+                </ul>
+                <a href="tel:+74991100728"  class="header-content_tel">
+                    <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7.78113 16.1837C10.6843 19.0864 14.22 21.3266 17.1026 21.3266C18.3986 21.3266 19.5334 20.8744 20.4476 19.8699C20.9798 19.2771 21.3116 18.5841 21.3116 17.9014C21.3116 17.3991 21.1204 16.917 20.6387 16.5754L17.5646 14.3854C17.0927 14.064 16.701 13.9033 16.3393 13.9033C15.8773 13.9033 15.4753 14.1647 15.0133 14.6164L14.3001 15.3197C14.2502 15.3703 14.1909 15.4105 14.1254 15.4381C14.06 15.4656 13.9897 15.48 13.9187 15.4804C13.758 15.4804 13.617 15.4204 13.5068 15.3699C12.894 15.0386 11.8294 14.1244 10.8347 13.14C9.85027 12.1556 8.93613 11.091 8.6147 10.4683C8.54547 10.3454 8.50764 10.2073 8.50456 10.0663C8.50456 9.936 8.54442 9.80486 8.65499 9.69472L9.35784 8.96186C9.81042 8.49943 10.0714 8.09743 10.0714 7.63543C10.0714 7.27415 9.9107 6.88243 9.57941 6.41015L7.41942 3.36643C7.06799 2.88429 6.57599 2.67343 6.03342 2.67343C5.37042 2.67343 4.67742 2.97472 4.09499 3.54772C3.12042 4.482 2.68842 5.63657 2.68842 6.912C2.68842 9.795 4.88827 13.2909 7.78113 16.1837Z" fill="#121212"/>
+                    </svg>                        
+                    8 (499) 110-07-28
+                </a>
+                <nav class="header-content_nav-icon">
+                    <a href="#" class="header-content_icon">
+                        <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M22 22L20 20" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>                            
+                    </a>
+                    <a href="#" class="header-content_icon">
+                        <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="#1A5FBC"/>
+                            <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="#1A5FBC"/>
+                            <path d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94Z" fill="#1A5FBC"/>
+                            <path d="M20.51 8.75H5.16999C4.74999 8.75 4.40999 9.07 4.36999 9.48L4.00999 13.83C3.86999 15.54 5.20999 17 6.91999 17H18.04C19.54 17 20.86 15.77 20.97 14.27L21.3 9.6C21.34 9.14 20.98 8.75 20.51 8.75Z" fill="#1A5FBC"/>
+                        </svg>
+                    </a>
+                    <a href="#" class="header-content_icon">
+                        <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M12 12C14.7614 12 17 9.76142 17 7C17 4.23858 14.7614 2 12 2C9.23858 2 7 4.23858 7 7C7 9.76142 9.23858 12 12 12Z" fill="#1A5FBC"/>
+                            <path d="M12 14.5C6.98997 14.5 2.90997 17.86 2.90997 22C2.90997 22.28 3.12997 22.5 3.40997 22.5H20.59C20.87 22.5 21.09 22.28 21.09 22C21.09 17.86 17.01 14.5 12 14.5Z" fill="#1A5FBC"/>
+                        </svg>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="main-block">
+            <div class="container-fluid">
+                <div class="main-block_fon">
+                    <div class="main-fon_content">
+                        <div class="fon-content_top">
+                            <div class="fon-content_top-text">
+                                <div class="fon-top_title">Здесь покупают запчасти</div> 
+                                <div class="fon-top_text">Arena Parts Company – крупный поставщик кузовных запчастей для автомобилей различных марок</div>
+                            </div>
+                            <div class="fon-content_top-btn">
+                                <a href="" class="link-main">Перейти в каталог
+                                    <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                                    </svg>                            
+                                </a>
+                            </div>
+                            
+                            <div class="fon-content_main-number">
+                                <!-- <img class="fon-main" src="/assets/images/main/fon-main.png" alt=""> -->
+                                <div class="fon-content_number-block">
+                                    <div class="number-block_title">15+</div>
+                                    <div class="number-block_text">лет опыта</div>
+                                </div>
+                                <div class="fon-content_number-block">
+                                    <div class="number-block_title">300 000+</div>
+                                    <div class="number-block_text">наименование запчастей</div>
+                                </div>
+                                <div class="fon-content_number-block">
+                                    <div class="number-block_title">80+</div>
+                                    <div class="number-block_text">сотрудников</div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="fon-content_bottom">
+                            <div class="fon-content_bottom-btn">
+                                <button class="btn-search btn-search_active">По марке авто</button>
+                                <div class="vertical-strip"></div>
+                                <button class="btn-search">По VIN/Госномеру</button>
+                                <div class="vertical-strip"></div>
+                                <button class="btn-search">По номеру</button>
+                            </div>
+                            <div class="fon-content_bottom-form"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-brand">
+            <div class="container-fluid">
+                <div class="main-brand_content">
+                    <div class="brand-content_top">
+                        <div class="custom-select">
+                            <div class="view-block_select" id="selected-option-1">По популярности 
+                                <svg class="select-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                </svg>                                    
+                            </div>
+                            <div class="select-items select-hide">
+                                <div class="select-item" data-value="popular" onclick="selectOption(this, 'selected-option-1')">По популярности</div>
+                                <div class="select-item" data-value="price" onclick="selectOption(this, 'selected-option-1')">По цене</div>
+                                <div class="select-item" data-value="newest" onclick="selectOption(this, 'selected-option-1')">По новизне</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="brand-content_main">
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brand-image2.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brand-image3.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brand-image4.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image5.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image6.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image7.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image8.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image9.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image10.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image11.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image12.png" alt="">
+                        </div>
+
+
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brand-image4.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image5.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brand-image2.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image9.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image8.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image10.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image11.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image12.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brand-image3.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image7.png" alt="">
+                        </div>
+                        <div class="brand-main_item">
+                            <img class="image-brand" src="assets/images/main/brang-image6.png" alt="">
+                        </div>
+
+                        
+                    </div>
+                    <div class="brand-content_bottom">
+                        <a href="#" class="arr-bottom_text">показать еще
+                            <svg class="arr-bottom_icon" width="17" height="10" viewBox="0 0 17 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 1L8.5 8L15.5 1" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                            </svg>                                
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-details">
+            <div class="container-fluid">
+                <div class="main-details_content">
+                    <div class="main-popular-products_top">
+                        <div class="main-products_top-title">Подобрать деталь</div>
+                        <a href="" class="link-main">в каталог
+                            <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                            </svg>                            
+                        </a>
+                    </div>
+                    <div class="details-content_main">
+                        <div class="details-content_main-left">
+                            <div class="details-left_top">
+                                <div class="details-left_top-categories">
+                                    <button class="btn-search btn-search_active">Марка
+                                        <svg class="icon-svg_btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg> 
+                                    </button>
+                                    <div class="vertical-strip"></div>
+                                    <button class="btn-search">Модель
+                                        <svg class="icon-svg_btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg> 
+                                    </button>
+                                    <div class="vertical-strip"></div>
+                                    <button class="btn-search">Год
+                                        <svg class="icon-svg_btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg> 
+                                    </button>
+                                </div>
+                                <div class="details-top_categories-btn">
+                                    <button class="catalog-btn"  onclick="toggleActive(this)">Мой автомобиль</button>
+                                    <button class="catalog-btn catalog-btn_active"  onclick="toggleActive(this)">Весь каталог</button>
+                                </div>
+                            </div>
+                            <div class="details-left_bottom">
+                                <div class="details-left_bottom-item">
+                                    <div class="details-bottom_item-block">
+                                        <img class="details-item_block-image" src="assets/images/main/item-bam.png" alt="">
+                                    </div>
+                                    <div class="details-bottom_item-content">
+                                        <div class="details-bottom_item-content_title">Бампер передний BMW F 30 15- Black Sapphire 475</div>
+                                        <div class="details-item_box-container">
+                                            <div class="details-item_box">
+                                                <div class="details-item_box-stamp">Марка:</div>
+                                                <div class="details-item_box-stamp_text">BMW</div>
+                                            </div>
+                                            <div class="details-bottom_item-content-box">
+                                                <div class="details-item_box-number">Оригинальный номер детали:</div>
+                                                <div class="details-item_box-number_text">51117445093</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-block_bottom">
+                                            <div class="product-block_bottom-price">13 500₽</div>
+                                            <a href="#" class="details-bottom_item-arr">
+                                                <svg class="arr-icon-svg" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 15.5L8 8.5L0.999999 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>   
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details-left_bottom-item">
+                                    <div class="details-bottom_item-block">
+                                        <img class="details-item_block-image" src="assets/images/main/item-bam.png" alt="">
+                                    </div>
+                                    <div class="details-bottom_item-content">
+                                        <div class="details-bottom_item-content_title">Бампер передний BMW F 30 15- Black Sapphire 475</div>
+                                        <div class="details-item_box-container">
+                                            <div class="details-item_box">
+                                                <div class="details-item_box-stamp">Марка:</div>
+                                                <div class="details-item_box-stamp_text">BMW</div>
+                                            </div>
+                                            <div class="details-bottom_item-content-box">
+                                                <div class="details-item_box-number">Оригинальный номер детали:</div>
+                                                <div class="details-item_box-number_text">51117445093</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-block_bottom">
+                                            <div class="product-block_bottom-price">13 500₽</div>
+                                            <a href="#" class="details-bottom_item-arr">
+                                                <svg class="arr-icon-svg" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 15.5L8 8.5L0.999999 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>   
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details-left_bottom-item">
+                                    <div class="details-bottom_item-block">
+                                        <img class="details-item_block-image" src="assets/images/main/item-bam.png" alt="">
+                                    </div>
+                                    <div class="details-bottom_item-content">
+                                        <div class="details-bottom_item-content_title">Бампер передний BMW F 30 15- Black Sapphire 475</div>
+                                        <div class="details-item_box-container">
+                                            <div class="details-item_box">
+                                                <div class="details-item_box-stamp">Марка:</div>
+                                                <div class="details-item_box-stamp_text">BMW</div>
+                                            </div>
+                                            <div class="details-bottom_item-content-box">
+                                                <div class="details-item_box-number">Оригинальный номер детали:</div>
+                                                <div class="details-item_box-number_text">51117445093</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-block_bottom">
+                                            <div class="product-block_bottom-price">13 500₽</div>
+                                            <a href="#" class="details-bottom_item-arr">
+                                                <svg class="arr-icon-svg" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 15.5L8 8.5L0.999999 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>   
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="details-left_bottom-item">
+                                    <div class="details-bottom_item-block">
+                                        <img class="details-item_block-image" src="assets/images/main/item-bam.png" alt="">
+                                    </div>
+                                    <div class="details-bottom_item-content">
+                                        <div class="details-bottom_item-content_title">Бампер передний BMW F 30 15- Black Sapphire 475</div>
+                                        <div class="details-item_box-container">
+                                            <div class="details-item_box">
+                                                <div class="details-item_box-stamp">Марка:</div>
+                                                <div class="details-item_box-stamp_text">BMW</div>
+                                            </div>
+                                            <div class="details-bottom_item-content-box">
+                                                <div class="details-item_box-number">Оригинальный номер детали:</div>
+                                                <div class="details-item_box-number_text">51117445093</div>
+                                            </div>
+                                        </div>
+                                        <div class="product-block_bottom">
+                                            <div class="product-block_bottom-price">13 500₽</div>
+                                            <a href="#" class="details-bottom_item-arr">
+                                                <svg class="arr-icon-svg" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 15.5L8 8.5L0.999999 1.5" stroke="white" stroke-width="1.5" stroke-linecap="round"/>
+                                                </svg>   
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-content_main-rigth">
+                            <div class="details-main_rigth-car">
+                                <img class="image-car" src="assets/images/main/image-car_sedan.png" alt="">
+                                <!-- <button class="test-btn_car"></button> -->
+                              
+                                <div class="circle1">
+                                    <div class="circle2">
+                                      <div class="circle3">
+                                        <div class="circle-text">Фары</div>
+                                      </div>
+                                    </div>
+                                </div>
+                                  
+                            </div>
+                            <div class="details-main_rigth-btn">
+                                <div class="custom-select details-select">
+                                    <div class="view-block_select" id="selected-option-2">
+                                        седан
+                                        <svg class="select-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                        </svg>                                   
+                                    </div>
+                                    <div class="select-items select-hide">
+                                        <div class="select-item" data-value="mazda" onclick="selectOption(this, 'selected-option-2')">мазда</div>
+                                        <div class="select-item" data-value="audi" onclick="selectOption(this, 'selected-option-2')">ауди</div>
+                                        <div class="select-item" data-value="nissan" onclick="selectOption(this, 'selected-option-2')">несан</div>
+                                    </div>
+                                </div>
+                                
+                                <div class="details-top_categories-btn">
+                                    <button class="catalog-btn catalog-btn_active"  onclick="toggleActive(this)">Вид спереди</button>
+                                    <button class="catalog-btn"  onclick="toggleActive(this)">Вид сзади</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="main-about-company">
+            <div class="container-fluid">
+                <div class="main-company_content">
+                    <div class="main-company_content-top">
+                        <div class="company_content-top_title">Официальный представитель JORDEN бренда на территории России</div>
+                        <div class="company_content-top_dash"></div>
+                        <div class="company_content-top_text">Компания осуществляет прямые поставки с фабрик Китая и Тайваня автозапчастей на такие марки как Kia Hyundai Volkswagen Skoda Toyota Mazda Nissan BMW Ford Lada (ВАЗ) Renault Chevrolet SsangYong Peugeot. Ведётся полный контроль качества на всех этапах производства. Запчасти оперативно доставляются       на склады в Москве благодаря грамотно отлаженной логистике</div>
+                    </div>
+                    <div class="main-company_content-bottom">
+                        <div class="company_content-bottom_item">
+                            <div class="company-bottom_item-top">
+                                <div class="company_item-top_icon">
+                                    <img class="company_item-icon_image" src="assets/images/main/bag-savings.png" alt="">
+                                </div>
+                                <div class="company_item-top_title">Экономия</div>
+                            </div>
+                            <div class="company-bottom_item-dash"></div>
+                            <div class="company-bottom_item-text">Cущественно сэкономить бюджет на покупке кузовных запчастей</div>
+                        </div>
+                        <div class="company_content-bottom_item">
+                            <div class="company-bottom_item-top">
+                                <div class="company_item-top_icon">
+                                    <img class="company_item-icon_image" src="assets/images/main/selection-image.png" alt="">
+                                </div>
+                                <div class="company_item-top_title">Подбор</div>
+                            </div>
+                            <div class="company-bottom_item-dash"></div>
+                            <div class="company-bottom_item-text"> Подобрать оригинальные и неоригинальные запчасти для автомобилей</div>
+                        </div>
+                        <div class="company_content-bottom_item">
+                            <div class="company-bottom_item-top">
+                                <div class="company_item-top_icon">
+                                    <img class="company_item-icon_image" src="assets/images/main/consultation-image.png" alt="">
+                                </div>
+                                <div class="company_item-top_title">Консультация</div>
+                            </div>
+                            <div class="company-bottom_item-dash"></div>
+                            <div class="company-bottom_item-text">Получить грамотную консультацию специалиста</div>
+                        </div>
+                        <div class="company_content-bottom_item">
+                            <div class="company-bottom_item-top">
+                                <div class="company_item-top_icon">
+                                    <img class="company_item-icon_image" src="assets/images/main/delivery-image.png" alt="">
+                                </div>
+                                <div class="company_item-top_title">Доставка</div>
+                            </div>
+                            <div class="company-bottom_item-dash"></div>
+                            <div class="company-bottom_item-text">Забрать запчасти в одном из офисов или заказать доставку в удобное для Вас место</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-popular-products">
+            <div class="container-fluid"> 
+                <div class="main-popular-products_top">
+                    <div class="main-products_top-title">Популярные товары</div>
+                    <a href="" class="link-main">в каталог
+                        <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                        </svg>                            
+                    </a>
+                </div>
+            </div>
+            <div class="main-products_content">
+                <div class="swiper mySwiper">        
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="main-products_content-item">
+                                <a href="" class="main-products_item-image">
+                                    <img class="product-item_image" src="assets/images/main/product-image.png" alt="">
+                                </a>
+                                <div class="product-item_block">
+                                    <a href="" class="product-block_title">Бампер передний BMW F 30 15- Black Sapphire 475</a>
+                                    <div class="product-block_cardln">
+                                        <div class="product-cardln_stamp">Марка: <span>BMW</span></div>
+                                        <div class="product-cardln_details">
+                                            <div class="product-cardln_details-text">Оригинальный номер детали:</div>
+                                            <div class="product-cardln_details-number">51117445093</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-block_bottom">
+                                        <div class="product-block_bottom-price">13 500.00₽</div>
+                                        <a href="#" class="header-content_icon">
+                                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94Z" fill="#1A5FBC"/>
+                                                <path d="M20.51 8.75H5.16999C4.74999 8.75 4.40999 9.07 4.36999 9.48L4.00999 13.83C3.86999 15.54 5.20999 17 6.91999 17H18.04C19.54 17 20.86 15.77 20.97 14.27L21.3 9.6C21.34 9.14 20.98 8.75 20.51 8.75Z" fill="#1A5FBC"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-products_content-item">
+                                <a href="" class="main-products_item-image">
+                                    <img class="product-item_image" src="assets/images/main/product-image.png" alt="">
+                                </a>
+                                <div class="product-item_block">
+                                    <a href="" class="product-block_title">Бампер передний BMW F 30 15- Black Sapphire 475</a>
+                                    <div class="product-block_cardln">
+                                        <div class="product-cardln_stamp">Марка: <span>BMW</span></div>
+                                        <div class="product-cardln_details">
+                                            <div class="product-cardln_details-text">Оригинальный номер детали:</div>
+                                            <div class="product-cardln_details-number">51117445093</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-block_bottom">
+                                        <div class="product-block_bottom-price">13 500.00₽</div>
+                                        <a href="#" class="header-content_icon">
+                                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94Z" fill="#1A5FBC"/>
+                                                <path d="M20.51 8.75H5.16999C4.74999 8.75 4.40999 9.07 4.36999 9.48L4.00999 13.83C3.86999 15.54 5.20999 17 6.91999 17H18.04C19.54 17 20.86 15.77 20.97 14.27L21.3 9.6C21.34 9.14 20.98 8.75 20.51 8.75Z" fill="#1A5FBC"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-products_content-item">
+                                <a href="" class="main-products_item-image">
+                                    <img class="product-item_image" src="assets/images/main/product-image.png" alt="">
+                                </a>
+                                <div class="product-item_block">
+                                    <a href="" class="product-block_title">Бампер передний BMW F 30 15- Black Sapphire 475</a>
+                                    <div class="product-block_cardln">
+                                        <div class="product-cardln_stamp">Марка: <span>BMW</span></div>
+                                        <div class="product-cardln_details">
+                                            <div class="product-cardln_details-text">Оригинальный номер детали:</div>
+                                            <div class="product-cardln_details-number">51117445093</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-block_bottom">
+                                        <div class="product-block_bottom-price">13 500.00₽</div>
+                                        <a href="#" class="header-content_icon">
+                                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94Z" fill="#1A5FBC"/>
+                                                <path d="M20.51 8.75H5.16999C4.74999 8.75 4.40999 9.07 4.36999 9.48L4.00999 13.83C3.86999 15.54 5.20999 17 6.91999 17H18.04C19.54 17 20.86 15.77 20.97 14.27L21.3 9.6C21.34 9.14 20.98 8.75 20.51 8.75Z" fill="#1A5FBC"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-products_content-item">
+                                <a href="" class="main-products_item-image">
+                                    <img class="product-item_image" src="assets/images/main/product-image.png" alt="">
+                                </a>
+                                <div class="product-item_block">
+                                    <a href="" class="product-block_title">Бампер передний BMW F 30 15- Black Sapphire 475</a>
+                                    <div class="product-block_cardln">
+                                        <div class="product-cardln_stamp">Марка: <span>BMW</span></div>
+                                        <div class="product-cardln_details">
+                                            <div class="product-cardln_details-text">Оригинальный номер детали:</div>
+                                            <div class="product-cardln_details-number">51117445093</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-block_bottom">
+                                        <div class="product-block_bottom-price">13 500.00₽</div>
+                                        <a href="#" class="header-content_icon">
+                                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94Z" fill="#1A5FBC"/>
+                                                <path d="M20.51 8.75H5.16999C4.74999 8.75 4.40999 9.07 4.36999 9.48L4.00999 13.83C3.86999 15.54 5.20999 17 6.91999 17H18.04C19.54 17 20.86 15.77 20.97 14.27L21.3 9.6C21.34 9.14 20.98 8.75 20.51 8.75Z" fill="#1A5FBC"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-products_content-item">
+                                <a href="" class="main-products_item-image">
+                                    <img class="product-item_image" src="assets/images/main/product-image.png" alt="">
+                                </a>
+                                <div class="product-item_block">
+                                    <a href="" class="product-block_title">Бампер передний BMW F 30 15- Black Sapphire 475</a>
+                                    <div class="product-block_cardln">
+                                        <div class="product-cardln_stamp">Марка: <span>BMW</span></div>
+                                        <div class="product-cardln_details">
+                                            <div class="product-cardln_details-text">Оригинальный номер детали:</div>
+                                            <div class="product-cardln_details-number">51117445093</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-block_bottom">
+                                        <div class="product-block_bottom-price">13 500.00₽</div>
+                                        <a href="#" class="header-content_icon">
+                                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94Z" fill="#1A5FBC"/>
+                                                <path d="M20.51 8.75H5.16999C4.74999 8.75 4.40999 9.07 4.36999 9.48L4.00999 13.83C3.86999 15.54 5.20999 17 6.91999 17H18.04C19.54 17 20.86 15.77 20.97 14.27L21.3 9.6C21.34 9.14 20.98 8.75 20.51 8.75Z" fill="#1A5FBC"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="main-products_content-item">
+                                <a href="" class="main-products_item-image">
+                                    <img class="product-item_image" src="assets/images/main/product-image.png" alt="">
+                                </a>
+                                <div class="product-item_block">
+                                    <a href="" class="product-block_title">Бампер передний BMW F 30 15- Black Sapphire 475</a>
+                                    <div class="product-block_cardln">
+                                        <div class="product-cardln_stamp">Марка: <span>BMW</span></div>
+                                        <div class="product-cardln_details">
+                                            <div class="product-cardln_details-text">Оригинальный номер детали:</div>
+                                            <div class="product-cardln_details-number">51117445093</div>
+                                        </div>
+                                    </div>
+                                    <div class="product-block_bottom">
+                                        <div class="product-block_bottom-price">13 500.00₽</div>
+                                        <a href="#" class="header-content_icon">
+                                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M16.25 22.5C17.2165 22.5 18 21.7165 18 20.75C18 19.7835 17.2165 19 16.25 19C15.2835 19 14.5 19.7835 14.5 20.75C14.5 21.7165 15.2835 22.5 16.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M8.25 22.5C9.2165 22.5 10 21.7165 10 20.75C10 19.7835 9.2165 19 8.25 19C7.2835 19 6.5 19.7835 6.5 20.75C6.5 21.7165 7.2835 22.5 8.25 22.5Z" fill="#1A5FBC"/>
+                                                <path d="M4.84 3.94L4.64 6.39C4.6 6.86 4.97 7.25 5.44 7.25H20.75C21.17 7.25 21.52 6.93 21.55 6.51C21.68 4.74 20.33 3.3 18.56 3.3H6.27C6.17 2.86 5.97 2.44 5.66 2.09C5.16 1.56 4.46 1.25 3.74 1.25H2C1.59 1.25 1.25 1.59 1.25 2C1.25 2.41 1.59 2.75 2 2.75H3.74C4.05 2.75 4.34 2.88 4.55 3.1C4.76 3.33 4.86 3.63 4.84 3.94Z" fill="#1A5FBC"/>
+                                                <path d="M20.51 8.75H5.16999C4.74999 8.75 4.40999 9.07 4.36999 9.48L4.00999 13.83C3.86999 15.54 5.20999 17 6.91999 17H18.04C19.54 17 20.86 15.77 20.97 14.27L21.3 9.6C21.34 9.14 20.98 8.75 20.51 8.75Z" fill="#1A5FBC"/>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="main-questions">
+            <div class="main-questions_content">
+                <div class="main-questions_content-top">
+                    <div class="questions-content_main">
+                        <div class="questions-content_main-foto">
+                            <img class="image-call" src="assets/images/main/call-centr.png" alt="">
+                            <div class="questions-content_foto-online"></div>
+                        </div>
+                        <div class="questions-content_main-text">Остались вопросы?</div>
+                        <a href="tel:+74991100728"  class="header-content_tel">
+                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.78113 16.1837C10.6843 19.0864 14.22 21.3266 17.1026 21.3266C18.3986 21.3266 19.5334 20.8744 20.4476 19.8699C20.9798 19.2771 21.3116 18.5841 21.3116 17.9014C21.3116 17.3991 21.1204 16.917 20.6387 16.5754L17.5646 14.3854C17.0927 14.064 16.701 13.9033 16.3393 13.9033C15.8773 13.9033 15.4753 14.1647 15.0133 14.6164L14.3001 15.3197C14.2502 15.3703 14.1909 15.4105 14.1254 15.4381C14.06 15.4656 13.9897 15.48 13.9187 15.4804C13.758 15.4804 13.617 15.4204 13.5068 15.3699C12.894 15.0386 11.8294 14.1244 10.8347 13.14C9.85027 12.1556 8.93613 11.091 8.6147 10.4683C8.54547 10.3454 8.50764 10.2073 8.50456 10.0663C8.50456 9.936 8.54442 9.80486 8.65499 9.69472L9.35784 8.96186C9.81042 8.49943 10.0714 8.09743 10.0714 7.63543C10.0714 7.27415 9.9107 6.88243 9.57941 6.41015L7.41942 3.36643C7.06799 2.88429 6.57599 2.67343 6.03342 2.67343C5.37042 2.67343 4.67742 2.97472 4.09499 3.54772C3.12042 4.482 2.68842 5.63657 2.68842 6.912C2.68842 9.795 4.88827 13.2909 7.78113 16.1837Z" fill="#121212"/>
+                            </svg>                        
+                            8 (499) 110-07-28
+                        </a>
+                    </div>
+                </div>
+                <div class="main-questions_content-main">
+                    <img class="car-left" src="assets/images/main/car.png" alt="">
+                    <div class="questions-content_main">
+                        <div class="questions-content_main-foto">
+                            <img class="image-call" src="assets/images/main/call-centr.png" alt="">
+                            <div class="questions-content_foto-online"></div>
+                        </div>
+                        <div class="questions-content_main-text">Остались вопросы?</div>
+                        <a href="tel:+74991100728"  class="header-content_tel">
+                            <svg class="icon-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.78113 16.1837C10.6843 19.0864 14.22 21.3266 17.1026 21.3266C18.3986 21.3266 19.5334 20.8744 20.4476 19.8699C20.9798 19.2771 21.3116 18.5841 21.3116 17.9014C21.3116 17.3991 21.1204 16.917 20.6387 16.5754L17.5646 14.3854C17.0927 14.064 16.701 13.9033 16.3393 13.9033C15.8773 13.9033 15.4753 14.1647 15.0133 14.6164L14.3001 15.3197C14.2502 15.3703 14.1909 15.4105 14.1254 15.4381C14.06 15.4656 13.9897 15.48 13.9187 15.4804C13.758 15.4804 13.617 15.4204 13.5068 15.3699C12.894 15.0386 11.8294 14.1244 10.8347 13.14C9.85027 12.1556 8.93613 11.091 8.6147 10.4683C8.54547 10.3454 8.50764 10.2073 8.50456 10.0663C8.50456 9.936 8.54442 9.80486 8.65499 9.69472L9.35784 8.96186C9.81042 8.49943 10.0714 8.09743 10.0714 7.63543C10.0714 7.27415 9.9107 6.88243 9.57941 6.41015L7.41942 3.36643C7.06799 2.88429 6.57599 2.67343 6.03342 2.67343C5.37042 2.67343 4.67742 2.97472 4.09499 3.54772C3.12042 4.482 2.68842 5.63657 2.68842 6.912C2.68842 9.795 4.88827 13.2909 7.78113 16.1837Z" fill="#121212"/>
+                            </svg>                        
+                            8 (499) 110-07-28
+                        </a>
+                    </div>
+                    <img class="car-rigth" src="assets/images/main/car.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <div class="container-fluid"> 
+            <div class="footer-content">
+                <div class="footer-content_top">
+                    <div class="footer-content_top-block">
+                        <a href="" class="footer-link">О нас</a>
+                        <a href="" class="footer-link">Доставка</a>
+                        <a href="" class="footer-link">Оплата</a>
+                        <a href="" class="footer-link">Гарантии и возврат</a>
+                    </div>
+                    
+                    <div class="footer-content_top-block_end">
+                        <a href="" class="footer-link">Политика конфиденциальности</a>
+                        <a href="" class="footer-link">Контакты ARENA PARTS</a>
+                        <a href="" class="footer-link">Публичная оферта</a>
+                    </div>
+                </div>
+            </div> 
+        </div>
+        <div class="footer-line"></div>
+    </footer>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script/index.js"></script>
+    <script src="script/select.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
