@@ -18,14 +18,131 @@
               <a href="#">
                 <img class="header-logo" src="assets/images/header/logo-image.png" alt="">
               </a>
-              <div class="header-content_catalog-btn">Каталог
-                <svg class="category-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M6.03332 1.66666H4.44999C2.62499 1.66666 1.66666 2.625 1.66666 4.44166V6.025C1.66666 7.84166 2.62499 8.8 4.44166 8.8H6.02499C7.84166 8.8 8.79999 7.84166 8.79999 6.025V4.44166C8.80832 2.625 7.84999 1.66666 6.03332 1.66666Z" fill="#1A5FBC"/>
-                    <path d="M15.5583 1.66666H13.975C12.1583 1.66666 11.2 2.625 11.2 4.44166V6.025C11.2 7.84166 12.1583 8.8 13.975 8.8H15.5583C17.375 8.8 18.3333 7.84166 18.3333 6.025V4.44166C18.3333 2.625 17.375 1.66666 15.5583 1.66666Z" fill="#1A5FBC"/>
-                    <path d="M15.5583 11.1917H13.975C12.1583 11.1917 11.2 12.15 11.2 13.9667V15.55C11.2 17.3667 12.1583 18.325 13.975 18.325H15.5583C17.375 18.325 18.3333 17.3667 18.3333 15.55V13.9667C18.3333 12.15 17.375 11.1917 15.5583 11.1917Z" fill="#1A5FBC"/>
-                    <path d="M6.03332 11.1917H4.44999C2.62499 11.1917 1.66666 12.15 1.66666 13.9667V15.55C1.66666 17.375 2.62499 18.3333 4.44166 18.3333H6.02499C7.84166 18.3333 8.79999 17.375 8.79999 15.5583V13.975C8.80832 12.15 7.84999 11.1917 6.03332 11.1917Z" fill="#1A5FBC"/>
-                </svg>                    
-              </div>
+                <button class="header-content_catalog-btn" id="catalogButton">
+                    <div class="header-content_catalog-btn_text">Каталог</div>
+                    <svg class="category-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg" id="catalogIcon">
+                        <path d="M6.03332 1.66666H4.44999C2.62499 1.66666 1.66666 2.625 1.66666 4.44166V6.025C1.66666 7.84166 2.62499 8.8 4.44166 8.8H6.02499C7.84166 8.8 8.79999 7.84166 8.79999 6.025V4.44166C8.80832 2.625 7.84999 1.66666 6.03332 1.66666Z" fill="#1A5FBC"/>
+                        <path d="M15.5583 1.66666H13.975C12.1583 1.66666 11.2 2.625 11.2 4.44166V6.025C11.2 7.84166 12.1583 8.8 13.975 8.8H15.5583C17.375 8.8 18.3333 7.84166 18.3333 6.025V4.44166C18.3333 2.625 17.375 1.66666 15.5583 1.66666Z" fill="#1A5FBC"/>
+                        <path d="M15.5583 11.1917H13.975C12.1583 11.1917 11.2 12.15 11.2 13.9667V15.55C11.2 17.3667 12.1583 18.325 13.975 18.325H15.5583C17.375 18.325 18.3333 17.3667 18.3333 15.55V13.9667C18.3333 12.15 17.375 11.1917 15.5583 11.1917Z" fill="#1A5FBC"/>
+                        <path d="M6.03332 11.1917H4.44999C2.62499 11.1917 1.66666 12.15 1.66666 13.9667V15.55C1.66666 17.375 2.62499 18.3333 4.44166 18.3333H6.02499C7.84166 18.3333 8.79999 17.375 8.79999 15.5583V13.975C8.80832 12.15 7.84999 11.1917 6.03332 11.1917Z" fill="#1A5FBC"/>
+                    </svg>                    
+                </button>
+                <div id="catalog-menu" class="catalog-menu">
+                    <div class="close-light_block">
+                        <button class="close-light_btn header-modal_hidden close-button">
+                            <img class="close-light" src="assets/images/header/iconamoon_close-light.png" alt="">
+                        </button>
+                        
+                    </div>
+                    
+                    <div class="catalog-menu_content">
+                        <div class="catalog-menu_content-left">
+                            <button class="catalog-menu_btn">Запчасти для ТО 
+                                <svg class="arr-svg" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 15L8 8L1 1" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                                    
+                            </button>
+                            <button class="catalog-menu_btn">Двигатель 
+                                <svg class="arr-svg" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 15L8 8L1 1" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                                    
+                            </button>
+                            <button class="catalog-menu_btn">Подвеска 
+                                <svg class="arr-svg" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 15L8 8L1 1" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                                    
+                            </button>
+                            <button class="catalog-menu_btn catalog-menu_btn-active">Кузов и составляющие 
+                                <svg class="arr-svg" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 15L8 8L1 1" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                                    
+                            </button>
+                            <button class="catalog-menu_btn">Освещение 
+                                <svg class="arr-svg" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 15L8 8L1 1" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                                    
+                            </button>
+                            <button class="catalog-menu_btn">Охлаждение, отопление
+                                <svg class="arr-svg" width="10" height="16" viewBox="0 0 10 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 15L8 8L1 1" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                                </svg>                                                                    
+                            </button>
+                            <button class="catalog-menu_btn">Оригинальный каталог</button>
+                        </div>
+                        <div class="catalog-menu_line"></div>
+                        <div class="catalog-menu_content-rigth">
+                            <div class="catalog-menu_title">Кузов и составляющие
+                                <button class="close-light_btn header-modal_visil close-button">
+                                    <img class="close-light" src="assets/images/header/iconamoon_close-light.png" alt="">
+                                </button>
+                            </div>
+                            <div class="catalog-menu_content-block">
+                                <div class="catalog-menu_block">
+                                    <div class="catalog-menu_block-item">
+                                        <div class="catalog-menu_block-item_title">Детали кузова</div>
+                                        <div class="catalog-menu_block-item_box">
+                                            <a href="#" class="catalog-menu_block-item_text">Бамперы</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Капоты</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Крылья</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Подкрылки</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Подрамники</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Пороги</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Решетки бампера</a>
+    
+                                            <div class="catalog-menu_block-item_still">
+                                                <div class="still-title">Ещё</div>
+                                                <svg class="still-svg" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8 8L15 1" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="catalog-menu_block-item">
+                                        <div class="catalog-menu_block-item_title">Детали кузова</div>
+                                        <div class="catalog-menu_block-item_box">
+                                            <a href="#" class="catalog-menu_block-item_text">Двери</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Капоты</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Крылья</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Подкрылки</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Подрамники</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Пороги</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Решетки бампера</a>
+    
+                                            <div class="catalog-menu_block-item_still">
+                                                <div class="still-title">Ещё</div>
+                                                <svg class="still-svg" width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M1 1L8 8L15 1" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round"/>
+                                                </svg>                                                
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="catalog-menu_block-item">
+                                        <div class="catalog-menu_block-item_title">Зеркала</div>
+                                        <div class="catalog-menu_block-item_box">
+                                            <a href="#" class="catalog-menu_block-item_text">Стекло зеркала</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Наружные зеркала</a>    
+                                        </div>
+                                        
+                                    </div>
+                                    <div class="catalog-menu_block-item">
+                                        <div class="catalog-menu_block-item_title">Автостекла</div>
+                                        <div class="catalog-menu_block-item_box">
+                                            <a href="#" class="catalog-menu_block-item_text">Лобовое стекло</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Боковое стекло</a>
+                                            <a href="#" class="catalog-menu_block-item_text">Заднее стекло</a>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                           
+                            
+                        </div>
+                    </div>
+                </div>
+
                 <ul class="navbar">
                     <li class="nav-item">
                         <a class="nav-link" href="#">О нас</a>
@@ -106,13 +223,162 @@
                         </div>
                         <div class="fon-content_bottom">
                             <div class="fon-content_bottom-btn">
-                                <button class="btn-search btn-search_active">По марке авто</button>
+                                <button class="btn-search btn-search_active" data-target="brand">По марке авто</button>
                                 <div class="vertical-strip"></div>
-                                <button class="btn-search">По VIN/Госномеру</button>
+                                <button class="btn-search" data-target="vin">По VIN/Госномеру</button>
                                 <div class="vertical-strip"></div>
-                                <button class="btn-search">По номеру</button>
+                                <button class="btn-search" data-target="number">По номеру</button>
                             </div>
-                            <div class="fon-content_bottom-form"></div>
+                            <div class="fon-content_bottom-form">
+                                <div class="dropdowns" id="brand">
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Укажите марку</option>
+                                        <option class="dropdowns-select_item-title" value="brand1">Марка 1</option>
+                                        <option class="dropdowns-select_item-title" value="brand2">Марка 2</option>
+                                        <option class="dropdowns-select_item-title" value="brand3">Марка 3</option>
+                                        <option class="dropdowns-select_item-title" value="brand4">Марка 4</option>
+                                        <option class="dropdowns-select_item-title" value="brand5">Марка 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите модель</option>
+                                        <option class="dropdowns-select_item-title" value="brand1">Марка 1</option>
+                                        <option class="dropdowns-select_item-title" value="brand2">Марка 2</option>
+                                        <option class="dropdowns-select_item-title" value="brand3">Марка 3</option>
+                                        <option class="dropdowns-select_item-title" value="brand4">Марка 4</option>
+                                        <option class="dropdowns-select_item-title" value="brand5">Марка 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите год</option>
+                                        <option class="dropdowns-select_item-title" value="brand1">Марка 1</option>
+                                        <option class="dropdowns-select_item-title" value="brand2">Марка 2</option>
+                                        <option class="dropdowns-select_item-title" value="brand3">Марка 3</option>
+                                        <option class="dropdowns-select_item-title" value="brand4">Марка 4</option>
+                                        <option class="dropdowns-select_item-title" value="brand5">Марка 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Укажите тип двигателя</option>
+                                        <option class="dropdowns-select_item-title" value="brand1">Марка 1</option>
+                                        <option class="dropdowns-select_item-title" value="brand2">Марка 2</option>
+                                        <option class="dropdowns-select_item-title" value="brand3">Марка 3</option>
+                                        <option class="dropdowns-select_item-title" value="brand4">Марка 4</option>
+                                        <option class="dropdowns-select_item-title" value="brand5">Марка 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите модификацию</option>
+                                        <option class="dropdowns-select_item-title" value="brand1">Марка 1</option>
+                                        <option class="dropdowns-select_item-title" value="brand2">Марка 2</option>
+                                        <option class="dropdowns-select_item-title" value="brand3">Марка 3</option>
+                                        <option class="dropdowns-select_item-title" value="brand4">Марка 4</option>
+                                        <option class="dropdowns-select_item-title" value="brand5">Марка 5</option>
+                                    </select>
+                                    <button id="search-button" class="search-button">Найти 
+                                        <svg class="search-button_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 22L20 20" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="dropdowns" id="vin">
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите VIN</option>
+                                        <option class="dropdowns-select_item-title" value="vin1">VIN 1</option>
+                                        <option class="dropdowns-select_item-title" value="vin2">VIN 2</option>
+                                        <option class="dropdowns-select_item-title" value="vin3">VIN 3</option>
+                                        <option class="dropdowns-select_item-title" value="vin4">VIN 4</option>
+                                        <option class="dropdowns-select_item-title" value="vin5">VIN 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите VIN</option>
+                                        <option class="dropdowns-select_item-title" value="vin1">VIN 1</option>
+                                        <option class="dropdowns-select_item-title" value="vin2">VIN 2</option>
+                                        <option class="dropdowns-select_item-title" value="vin3">VIN 3</option>
+                                        <option class="dropdowns-select_item-title" value="vin4">VIN 4</option>
+                                        <option class="dropdowns-select_item-title" value="vin5">VIN 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите VIN</option>
+                                        <option class="dropdowns-select_item-title" value="vin1">VIN 1</option>
+                                        <option class="dropdowns-select_item-title" value="vin2">VIN 2</option>
+                                        <option class="dropdowns-select_item-title" value="vin3">VIN 3</option>
+                                        <option class="dropdowns-select_item-title" value="vin4">VIN 4</option>
+                                        <option class="dropdowns-select_item-title" value="vin5">VIN 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите VIN</option>
+                                        <option class="dropdowns-select_item-title" value="vin1">VIN 1</option>
+                                        <option class="dropdowns-select_item-title" value="vin2">VIN 2</option>
+                                        <option class="dropdowns-select_item-title" value="vin3">VIN 3</option>
+                                        <option class="dropdowns-select_item-title" value="vin4">VIN 4</option>
+                                        <option class="dropdowns-select_item-title" value="vin5">VIN 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите VIN</option>
+                                        <option class="dropdowns-select_item-title" value="vin1">VIN 1</option>
+                                        <option class="dropdowns-select_item-title" value="vin2">VIN 2</option>
+                                        <option class="dropdowns-select_item-title" value="vin3">VIN 3</option>
+                                        <option class="dropdowns-select_item-title" value="vin4">VIN 4</option>
+                                        <option class="dropdowns-select_item-title" value="vin5">VIN 5</option>
+                                    </select>
+                                    <button id="search-button" class="search-button">Найти 
+                                        <svg class="search-button_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 22L20 20" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                                <div class="dropdowns" id="number">
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите номер</option>
+                                        <option class="dropdowns-select_item-title" value="number1">Номер 1</option>
+                                        <option class="dropdowns-select_item-title" value="number2">Номер 2</option>
+                                        <option class="dropdowns-select_item-title" value="number3">Номер 3</option>
+                                        <option class="dropdowns-select_item-title" value="number4">Номер 4</option>
+                                        <option class="dropdowns-select_item-title" value="number5">Номер 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите номер</option>
+                                        <option class="dropdowns-select_item-title" value="number1">Номер 1</option>
+                                        <option class="dropdowns-select_item-title" value="number2">Номер 2</option>
+                                        <option class="dropdowns-select_item-title" value="number3">Номер 3</option>
+                                        <option class="dropdowns-select_item-title" value="number4">Номер 4</option>
+                                        <option class="dropdowns-select_item-title" value="number5">Номер 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите номер</option>
+                                        <option class="dropdowns-select_item-title" value="number1">Номер 1</option>
+                                        <option class="dropdowns-select_item-title" value="number2">Номер 2</option>
+                                        <option class="dropdowns-select_item-title" value="number3">Номер 3</option>
+                                        <option class="dropdowns-select_item-title" value="number4">Номер 4</option>
+                                        <option class="dropdowns-select_item-title" value="number5">Номер 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите номер</option>
+                                        <option class="dropdowns-select_item-title" value="number1">Номер 1</option>
+                                        <option class="dropdowns-select_item-title" value="number2">Номер 2</option>
+                                        <option class="dropdowns-select_item-title" value="number3">Номер 3</option>
+                                        <option class="dropdowns-select_item-title" value="number4">Номер 4</option>
+                                        <option class="dropdowns-select_item-title" value="number5">Номер 5</option>
+                                    </select>
+                                    <select class="dropdowns-select_item">
+                                        <option class="dropdowns-select_item-title" value="" selected hidden>Выберите номер</option>
+                                        <option class="dropdowns-select_item-title" value="number1">Номер 1</option>
+                                        <option class="dropdowns-select_item-title" value="number2">Номер 2</option>
+                                        <option class="dropdowns-select_item-title" value="number3">Номер 3</option>
+                                        <option class="dropdowns-select_item-title" value="number4">Номер 4</option>
+                                        <option class="dropdowns-select_item-title" value="number5">Номер 5</option>
+                                    </select>
+                                    <button id="search-button" class="search-button">Найти 
+                                        <svg class="search-button_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                            <path d="M22 22L20 20" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                                    </button>
+                                </div>
+                                
+                               
+                            </div>
                         </div>
                     </div>
                 </div>
