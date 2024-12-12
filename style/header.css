@@ -151,6 +151,7 @@
   font-family: "Sansation";
   font-weight: 400;
   line-height: normal;
+  color: rgba(19, 27, 55, 1);
 }
 .nav-link:hover {
   color: rgba(26, 95, 188, 1);
