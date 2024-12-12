@@ -1146,6 +1146,40 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+.main-mistake {
+  margin: 6.771vw 0;
+}
+.main-mistake_content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+}
+.main-mistake_content-block {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 1.25vw;
+}
+.main-mistake_content-block_title {
+  font-family: "Sansation";
+  font-size: 6.667vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main-mistake_content-block_text {
+  font-family: "Sansation";
+  font-size: 1.667vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
 @media (max-width: 48em) {
   .container-fluid {
     margin: 0;
@@ -1632,29 +1666,42 @@ body {
     text-align: right;
   }
   /* shopping */
-  .main-basket{
+  .main-basket {
     margin: 26.667vw 0 29.067vw 0;
   }
-  .main-basket_contentd-title{
+  .main-basket_contentd-title {
     font-size: 4.267vw;
   }
-  .main-basket_content-text{
+  .main-basket_content-text {
     font-size: 3.733vw;
     width: 88.267vw;
   }
-  .main-basket_content-block{
+  .main-basket_content-block {
     gap: 5.6vw;
   }
-  .main-basket_content{
+  .main-basket_content {
     gap: 5.333vw;
   }
-  .shopping-border{
+  .shopping-border {
     width: 29.333vw;
     height: 29.333vw;
     padding: 8vw;
   }
-  .shopping-border_image{
+  .shopping-border_image {
     width: 13.333vw;
     height: 13.333vw;
+  }
+  /* main-mistake */
+  .main-mistake{
+    margin: 26.667vw 0 29.067vw 0;
+  }
+  .main-mistake_content-block{
+    gap: 6.4vw;
+  }
+  .main-mistake_content-block_title{
+    font-size: 12.8vw;
+  }
+  .main-mistake_content-block_text{
+    font-size: 4.267vw;
   }
 }
