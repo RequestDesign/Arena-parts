@@ -1,5 +1,3 @@
-
-
 var swiper = new Swiper(".mySwiper", {
   slidesPerView: "auto",
   spaceBetween: 13,
@@ -19,8 +17,6 @@ var swiper = new Swiper(".mySwiper", {
     },
   },
 });
-
-
 
 window.addEventListener("resize", () => updateIcon(isCatalogOpen));
 window.addEventListener("load", () => updateIcon(isCatalogOpen));
