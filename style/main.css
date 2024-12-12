@@ -1019,10 +1019,10 @@ body {
   width: 6.667vw;
   height: 4.375vw;
 }
-.main-contact{
+.main-contact {
   margin-top: 2.396vw;
 }
-.map-content_top{
+.map-content_top {
   width: 100%;
   height: 100%;
 }
@@ -1097,6 +1097,54 @@ body {
   text-decoration-skip-ink: none;
   text-decoration: none;
   color: rgba(18, 18, 18, 1);
+}
+/* shopping */
+.main-basket {
+  margin: 6.771vw 0;
+}
+.main-basket_content {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 2.083vw;
+}
+.main-basket_content-block {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  gap: 1.094vw;
+}
+.shopping-border {
+  width: 5.729vw;
+  height: 5.729vw;
+  padding: 1.563vw;
+  border-radius: 1000px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.shopping-border_image {
+  width: 2.604vw;
+  height: 2.604vw;
+}
+.main-basket_contentd-title {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main-basket_content-text {
+  width: 21.094vw;
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -1552,35 +1600,61 @@ body {
   .category-content_item-title {
     font-size: 3.733vw;
   }
-  .main-contact{
+  .main-contact {
     margin-top: 9.6vw;
   }
-  .main-map_content{
+  .main-map_content {
     gap: 5.333vw;
   }
-  #map{
+  #map {
     width: 100%;
     height: 50.6vw;
   }
-  .map-content_line-block{
+  .map-content_line-block {
     width: 100%;
   }
-  .map-content_line{
+  .map-content_line {
     border: none;
   }
-  .contact-item{
+  .contact-item {
     padding: 4vw 0;
   }
-  .map-content_bottom-title{
+  .map-content_bottom-title {
     font-size: 4.267vw;
   }
-  .contact-item_title{
+  .contact-item_title {
     font-size: 3.467vw;
   }
-  .contact-item_text{
+  .contact-item_text {
     gap: 1.333vw;
     font-size: 3.467vw;
     width: auto;
     text-align: right;
+  }
+  /* shopping */
+  .main-basket{
+    margin: 26.667vw 0 29.067vw 0;
+  }
+  .main-basket_contentd-title{
+    font-size: 4.267vw;
+  }
+  .main-basket_content-text{
+    font-size: 3.733vw;
+    width: 88.267vw;
+  }
+  .main-basket_content-block{
+    gap: 5.6vw;
+  }
+  .main-basket_content{
+    gap: 5.333vw;
+  }
+  .shopping-border{
+    width: 29.333vw;
+    height: 29.333vw;
+    padding: 8vw;
+  }
+  .shopping-border_image{
+    width: 13.333vw;
+    height: 13.333vw;
   }
 }
