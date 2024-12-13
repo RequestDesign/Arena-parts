@@ -1424,6 +1424,97 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+/* main-about */
+.main-about {
+  margin-top: 1.719vw;
+  margin-bottom: 5.208vw;
+}
+.main-about_content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-about_content-rigth {
+  display: grid;
+}
+.image-about {
+  width: 53.646vw;
+  height: 27.344vw;
+}
+.main-about_content-rigth_title {
+  font-family: "Sansation";
+  font-size: 3.125vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  margin-bottom: 2.083vw;
+}
+.main-about_content-rigth_text {
+  width: 52.083vw;
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+  margin-bottom: 4.167vw;
+}
+.main-about_content-left_item {
+  display: grid;
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 26.771vw;
+  height: fit-content;
+}
+.about-item_text-blue {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: rgba(26, 95, 188, 1);
+}
+.main-about_content-left {
+  display: grid;
+  gap: 1.042vw;
+  height: fit-content;
+}
+.main-proposal_content{
+  display: grid;
+  gap: 4.167vw;
+}
+.main-proposal_content-top{
+  display: flex;
+  justify-content: space-between;
+}
+.main-proposal_content-block_title {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main-proposal_content-bottom{
+  display: flex;
+  justify-content: space-between;
+}
+.image-about4{
+  width: 21.576vw;
+}
 @media (max-width: 48em) {
   .container-fluid {
     margin: 0;
@@ -2019,7 +2110,7 @@ body {
     margin-top: 9.6vw;
     margin-bottom: 26.667vw;
   }
-  .main-cooperation_content{
+  .main-cooperation_content {
     gap: 0;
   }
   .main-cooperation_content-top {
@@ -2039,44 +2130,98 @@ body {
   .main-cooperation_content-main_title {
     font-size: 3.733vw;
   }
-  .main-cooperation_content-bottom{
+  .main-cooperation_content-bottom {
     gap: 2.667vw;
   }
-  .cooperation_content-bottom_form{
+  .cooperation_content-bottom_form {
     width: 100%;
     gap: 4vw;
   }
-  .cooperation_content-main_block{
+  .cooperation_content-main_block {
     gap: 2.933vw;
   }
-  .cooperation_content-main_block-item{
+  .cooperation_content-main_block-item {
     width: 42.667vw;
     height: 42.667vw;
     padding: 2.667vw 1.6vw;
     border-radius: 5.333vw;
   }
-  .cooperation-svg{
+  .cooperation-svg {
     width: 5.333vw;
     height: 5.333vw;
   }
-  .cooperation_content-main_block-item_title{
+  .cooperation_content-main_block-item_title {
     font-size: 3.2vw;
   }
-  .cooperation_content-main_block-item_text{
+  .cooperation_content-main_block-item_text {
     font-size: 2.933vw;
   }
-  .cooperation_content-bottom_form-block{
+  .cooperation_content-bottom_form-block {
     width: 100%;
     gap: 1.867vw;
   }
-  .form-input{
+  .form-input {
     width: 100%;
     height: 10.4vw;
     padding: 3.467vw 4.533vw;
     font-size: 3.2vw;
     border-radius: 2.133vw;
   }
-  .cooperation_form-text{
+  .cooperation_form-text {
     font-size: 2.667vw;
+  }
+  /* main-about */
+  .main-about{
+    margin-top: 9.6vw;
+    margin-bottom: 13.333vw;
+  }
+  .main-about_content{
+    display: grid;
+    gap: 5.333vw;
+  }
+  .main-proposal_content-top{
+    display: grid;
+    gap: 5.333vw;
+  }
+  .main-about_content-left{
+    order: 2;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5.333vw;
+  }
+  .main-about_content-left_item{
+    font-size: 3.2vw;
+    width: 40vw;
+    white-space: wrap;
+  }
+  .about-item_text-blue{
+    font-size: 4.8vw;
+  }
+  .main-about_content-rigth_title{
+    font-size: 4.267vw;
+    margin-bottom: 5.333vw;
+  }
+  .main-about_content-rigth_text{
+    width: 100%;
+    font-size: 3.733vw;
+    margin-bottom: 10.667vw;
+  }
+  .image-about{
+    width: 100%;
+    height: 45.067vw;
+  }
+  .main-proposal_content-block_title{
+    font-size: 4.267vw;
+  }
+  .main-proposal_content-bottom{
+    flex-wrap: wrap;
+    gap: 2.667vw;
+  }
+  .image-about4{
+    width: 42.667vw;
+  }
+  .main-proposal{
+    margin-bottom: 26.667vw;
   }
 }
