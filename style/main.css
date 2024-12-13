@@ -1491,11 +1491,11 @@ body {
   gap: 1.042vw;
   height: fit-content;
 }
-.main-proposal_content{
+.main-proposal_content {
   display: grid;
   gap: 4.167vw;
 }
-.main-proposal_content-top{
+.main-proposal_content-top {
   display: flex;
   justify-content: space-between;
 }
@@ -1508,12 +1508,125 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-.main-proposal_content-bottom{
+.main-proposal_content-bottom {
   display: flex;
   justify-content: space-between;
 }
-.image-about4{
+.image-about4 {
   width: 21.576vw;
+}
+
+/* modal */
+.modal {
+  align-items: center;
+  justify-content: center;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background: rgba(51, 51, 51, 0.6);
+}
+.modal-auth {
+  display: grid;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 33.333vw;
+  height: 27.604vw;
+  padding: 3.646vw 4.167vw;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-register {
+  display: grid;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  width: 40vw;
+  height: 30vw;
+  padding: 4vw 5vw;
+  border-radius: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal_title {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  height: fit-content;
+}
+.modal-content_block {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  justify-items: center;
+  height: fit-content;
+  gap: 2.083vw;
+}
+.form-modal_input {
+  width: 17.917vw;
+  height: 3.021vw;
+  padding: 1.042vw;
+  border-radius: 6px;
+  border: 1px solid rgba(238, 242, 246, 1);
+  color: rgba(184, 184, 184, 1);
+}
+.form-modal_input::placeholder {
+  color: rgba(184, 184, 184, 1);
+}
+.form_modal-auth_content {
+  display: grid;
+  gap: 1.094vw;
+}
+.form_modal-bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.form_modal-register_bottom {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.forgotPassword {
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(18, 18, 18, 1);
+  text-decoration: none;
+}
+.openAuthModal {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(26, 95, 188, 1);
+  text-decoration: none;
+}
+.close-auth {
+  position: absolute;
+  top: 1.042vw;
+  right: 1.198vw;
+}
+.close-svg {
+  width: 1.25vw;
+  height: 1.25vw;
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -2171,57 +2284,107 @@ body {
     font-size: 2.667vw;
   }
   /* main-about */
-  .main-about{
+  .main-about {
     margin-top: 9.6vw;
     margin-bottom: 13.333vw;
   }
-  .main-about_content{
+  .main-about_content {
     display: grid;
     gap: 5.333vw;
   }
-  .main-proposal_content-top{
+  .main-proposal_content-top {
     display: grid;
     gap: 5.333vw;
   }
-  .main-about_content-left{
+  .main-about_content-left {
     order: 2;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     gap: 5.333vw;
   }
-  .main-about_content-left_item{
+  .main-about_content-left_item {
     font-size: 3.2vw;
     width: 40vw;
     white-space: wrap;
   }
-  .about-item_text-blue{
+  .about-item_text-blue {
     font-size: 4.8vw;
   }
-  .main-about_content-rigth_title{
+  .main-about_content-rigth_title {
     font-size: 4.267vw;
     margin-bottom: 5.333vw;
   }
-  .main-about_content-rigth_text{
+  .main-about_content-rigth_text {
     width: 100%;
     font-size: 3.733vw;
     margin-bottom: 10.667vw;
   }
-  .image-about{
+  .image-about {
     width: 100%;
     height: 45.067vw;
   }
-  .main-proposal_content-block_title{
+  .main-proposal_content-block_title {
     font-size: 4.267vw;
   }
-  .main-proposal_content-bottom{
+  .main-proposal_content-bottom {
     flex-wrap: wrap;
     gap: 2.667vw;
   }
-  .image-about4{
+  .image-about4 {
     width: 42.667vw;
   }
-  .main-proposal{
+  .main-proposal {
     margin-bottom: 26.667vw;
+  }
+  /* modal */
+
+  .modal-auth {
+    width: 88vw; /* Ширина модального окна авторизации */
+    height: 84vw; /* Высота модального окна авторизации */
+    padding: 8vw 9.067vw; /* Отступы для авторизации */
+    border-radius: 4.267vw; /* Закругленные углы для авторизации */
+  }
+  .modal-register {
+    width: 88vw; /* Ширина модального окна регистрации */
+    height: 84vw; /* Высота модального окна регистрации */
+    padding: 8vw 9.067vw; /* Отступы для регистрации */
+    border-radius: 4.267vw; /* Закругленные углы для регистрации */
+  }
+  .modal-register{
+    gap: 8vw;
+  }
+  .form_modal-auth_content{
+    gap: 5.6vw;
+  }
+  .modal-content_block{
+    gap: 8vw;
+  }
+  .forgotPassword{
+    font-size: 3.733vw;
+  }
+  .modal_title{
+    font-size: 4.267vw;
+  }
+  .form-modal_input{
+    font-size: 3.467vw;
+    width: 67.733vw;
+    height: 10.667vw;
+    padding: 3.2vw 5.333vw;
+  }
+  .close-auth{
+    top: 4vw;
+    right: 3.733vw;
+  }
+  .openAuthModal{
+    font-size: 3.733vw;
+  }
+  #loginButton {
+    color: #007bff; /* Цвет текста */
+    text-decoration: none; /* Убираем подчеркивание */
+    font-weight: bold; /* Жирный текст */
+  }
+  #loginButton:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
   }
 }

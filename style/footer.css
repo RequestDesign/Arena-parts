@@ -3,6 +3,11 @@
   margin-top: 18vh;
   margin-bottom: 50px;
 }
+.container-fluid {
+  width: 89.583vw !important;
+  margin: 0 auto;
+  padding: 0 !important;
+}
 .footer-content {
   display: grid;
 }

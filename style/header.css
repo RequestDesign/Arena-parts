@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: space-between;
 }
+.container-fluid {
+  width: 89.583vw !important;
+  margin: 0 auto;
+  padding: 0 !important;
+}
 .header-logo {
   width: 9.219vw;
 }
