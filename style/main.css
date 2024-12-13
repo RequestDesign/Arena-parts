@@ -108,6 +108,7 @@ body {
   display: flex;
   align-items: center;
   text-transform: uppercase;
+  border: none;
 }
 .arr-icon {
   background-color: white;
@@ -1244,16 +1245,13 @@ body {
   padding: 1.563vw;
   border-radius: 16px;
 }
-.main-delivery_content-main_block{
+.main-delivery_content-main_block {
   width: 30.542vw;
   background: rgba(238, 242, 246, 1);
   /* width: Fixed (644px) px; */
   height: 9.688vw;
   padding: 1.563vw;
   border-radius: 16px;
-}
-.delivery_content-main_box-text {
-  
 }
 .delivery_content-main_text {
   font-family: "Sansation";
@@ -1299,6 +1297,132 @@ body {
 }
 .main-delivery_line {
   border: 1px solid rgba(184, 184, 184, 1);
+}
+/* cooperation */
+.main-cooperation {
+  margin-top: 4.167vw;
+}
+.main-cooperation_content {
+  display: grid;
+  gap: 4.167vw;
+}
+.main-cooperation_content-top {
+  width: 59.375vw;
+  display: grid;
+  gap: 1.25vw;
+}
+.main-cooperation_content-top_title {
+  font-family: "Sansation";
+  font-size: 3.125vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main-cooperation_content-top_text {
+  font-family: "Sansation";
+  font-size: 1.667vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.main-cooperation_content-main {
+  display: grid;
+  gap: 1.563vw;
+}
+.main-cooperation_content-main_title {
+  font-family: "Sansation";
+  font-size: 2.5vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.cooperation_content-main_block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2.031vw;
+}
+.cooperation_content-main_block-item {
+  width: 28.073vw;
+  height: 15.729vw;
+  padding: 1.771vw 1.146vw;
+  border-radius: 56px;
+  background: rgba(238, 244, 249, 1);
+  display: grid;
+  gap: 1.25vw;
+}
+.cooperation-svg {
+  width: 2.387vw;
+  height: 2.387vw;
+}
+.cooperation_content-main_block-item_title {
+  display: flex;
+  align-items: center;
+  gap: 1.042vw;
+  font-family: "Sansation";
+  font-size: 1.667vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(19, 27, 55, 1);
+}
+.cooperation_content-main_block-item_text {
+  font-family: "Sansation";
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(62, 66, 80, 1);
+}
+.main-cooperation_content-bottom {
+  display: grid;
+  gap: 1.563vw;
+}
+.cooperation_content-bottom_form {
+  width: 45.521vw;
+  display: grid;
+  gap: 1.563vw;
+  justify-items: start;
+}
+.cooperation_content-bottom_form-block {
+  display: grid;
+  gap: 1.042vw;
+}
+.cooperation_form-text {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 0.6);
+}
+.form-input {
+  outline: none;
+  width: 36.51vw;
+  height: 4.688vw;
+  padding: 1.979vw 1.875vw;
+  border-radius: 20px;
+  border: 2px solid rgba(216, 224, 233, 1);
+  font-family: "Sansation";
+  font-size: 1.25vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -1829,65 +1953,130 @@ body {
     margin-top: 9.6vw;
     margin-bottom: 26.667vw;
   }
-  .main-delivery_content-top{
+  .main-delivery_content-top {
     display: grid;
     justify-content: 0;
     gap: 6.4vw;
   }
-  .main-delivery_content-block_title{
+  .main-delivery_content-block_title {
     width: 100%;
     font-size: 4.267vw;
     border-bottom: 1px solid rgba(184, 184, 184, 1);
     padding-bottom: 5.333vw;
   }
-  .delivery-content_line-block{
+  .delivery-content_line-block {
     width: 100%;
     justify-content: 0;
   }
-  .delivery_contact-item_title{
+  .delivery_contact-item_title {
     font-size: 3.467vw;
   }
-  .delivery-contact_item{
+  .delivery-contact_item {
     padding-bottom: 4vw;
   }
-  .delivery-contact_item-text{
+  .delivery-contact_item-text {
     padding: 4vw 0;
   }
-  .contact-item_special{
+  .contact-item_special {
     padding-top: 4vw;
   }
-  .main-delivery_content{
+  .main-delivery_content {
     gap: 8vw;
   }
-  .main-delivery_content-main{
+  .main-delivery_content-main {
     display: grid;
-    gap: 5.333vw ;
+    gap: 5.333vw;
   }
-  .main-delivery_content-main_block{
+  .main-delivery_content-main_block {
     width: 100%;
     height: auto;
     padding: 2.667vw;
   }
-  .main-delivery_content-main_box{
+  .main-delivery_content-main_box {
     width: 100%;
     height: auto;
     padding: 2.667vw;
   }
-  .main-delivery_content-main_box{
+  .main-delivery_content-main_box {
     width: 100%;
   }
-  .delivery_content-main_text{
+  .delivery_content-main_text {
     font-size: 2.933vw;
   }
-  .main-delivery_content-bottom{
+  .main-delivery_content-bottom {
     border-top: 0;
     padding: 8vw 0;
     gap: 8vw;
   }
-  .delivery_content-bottom_item-title{
+  .delivery_content-bottom_item-title {
     font-size: 3.467vw;
   }
-  .delivery_content-bottom_item-block{
+  .delivery_content-bottom_item-block {
     font-size: 2.933vw;
+  }
+  /* cooperation */
+  .main-cooperation {
+    margin-top: 9.6vw;
+    margin-bottom: 26.667vw;
+  }
+  .main-cooperation_content{
+    gap: 0;
+  }
+  .main-cooperation_content-top {
+    width: 100%;
+  }
+  .main-cooperation_content-top_title {
+    font-size: 4.267vw;
+  }
+  .main-cooperation_content-top_text {
+    font-size: 3.733vw;
+  }
+  .main-cooperation_content-main {
+    gap: 5.333vw;
+    margin-top: 8vw;
+    margin-bottom: 13.333vw;
+  }
+  .main-cooperation_content-main_title {
+    font-size: 3.733vw;
+  }
+  .main-cooperation_content-bottom{
+    gap: 2.667vw;
+  }
+  .cooperation_content-bottom_form{
+    width: 100%;
+    gap: 4vw;
+  }
+  .cooperation_content-main_block{
+    gap: 2.933vw;
+  }
+  .cooperation_content-main_block-item{
+    width: 42.667vw;
+    height: 42.667vw;
+    padding: 2.667vw 1.6vw;
+    border-radius: 5.333vw;
+  }
+  .cooperation-svg{
+    width: 5.333vw;
+    height: 5.333vw;
+  }
+  .cooperation_content-main_block-item_title{
+    font-size: 3.2vw;
+  }
+  .cooperation_content-main_block-item_text{
+    font-size: 2.933vw;
+  }
+  .cooperation_content-bottom_form-block{
+    width: 100%;
+    gap: 1.867vw;
+  }
+  .form-input{
+    width: 100%;
+    height: 10.4vw;
+    padding: 3.467vw 4.533vw;
+    font-size: 3.2vw;
+    border-radius: 2.133vw;
+  }
+  .cooperation_form-text{
+    font-size: 2.667vw;
   }
 }
