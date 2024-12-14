@@ -1679,6 +1679,8 @@ body {
   border: none;
   background: none;
   height: fit-content;
+  text-decoration: none;
+  color: rgba(19, 27, 55, 1);
 }
 .personalAccount-content_line {
   border: 1px solid rgba(0, 0, 0, 0.06);
@@ -1746,6 +1748,87 @@ body {
   background: none;
   color: rgba(26, 95, 188, 1);
 }
+.personalAccountCar-content_main {
+  display: flex;
+  gap: 5.417vw;
+}
+.personalAccountCar-content_main-rigth {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  gap: 5.417vw;
+}
+.personalAccountCar-item {
+  display: grid;
+  gap: 1.927vw;
+}
+.personalAccountCar-item_block {
+  display: grid;
+  gap: 2.656vw;
+}
+.car-image {
+  width: 23.177vw;
+  height: 9.427vw;
+}
+.personalAccountCar-item_title {
+  font-family: "Sansation";
+  font-size: 1.888vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.delete-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.417vw;
+  border: none;
+  background: none;
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(26, 95, 188, 1);
+}
+.delete-svg {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+.add-item {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  align-content: center;
+  gap: 1.042vw;
+}
+.add-item_plus {
+  width: 3.646vw;
+  height: 3.646vw;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+}
+.plus-svg {
+  width: 0.99vw;
+  height: 2.917vw;
+}
+.add-item_text {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
 /* modal password */
 .modal-change-password {
   display: grid;
@@ -1770,7 +1853,7 @@ body {
   border-radius: 0.833vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
-.changePasswordForm-bottom{
+.changePasswordForm-bottom {
   display: flex;
   align-items: end;
 }
@@ -2623,38 +2706,83 @@ body {
   .personalAccount-content_main-rigth_password {
     font-size: 3.733vw;
   }
+  .personalAccountCar-content_main {
+    display: grid;
+    gap: 13.333vw;
+  }
+  .personalAccountCar-content_main-rigth {
+    display: grid;
+    gap: 16vw;
+  }
+  .personalAccountCar-item {
+    gap: 8.267vw;
+  }
+  .personalAccountCar-item_block {
+    justify-items: center;
+    gap: 7.733vw;
+  }
+  .personalAccountCar-item_title{
+    font-size: 3.733vw;
+  }
+  .car-image{
+    width: 88.267vw;
+    height: 35.733vw;
+  }
+  .delete-text{
+    font-size: 3.733vw;
+    gap: 2.133vw;
+  }
+  .delete-svg{
+    width: 5.4vw;
+    height: 5.4vw;
+    /* padding: 6px; */
+  }
+  .add-item_plus{
+    width: 18.667vw;
+    height: 18.667vw;
+  }
+  .plus-svg{
+    width: 4.567vw;
+    height: 13.533vw;
+  }
+  .add-item{
+    gap: 5.333vw;
+  }
+  .add-item_text{
+    font-size: 4.8vw;
+  }
   /* modal-password */
   .modal-change-password {
-    width: 88vw; 
-    height: 90.667vw; 
-    padding: 8vw 9.067vw;; 
-    border-radius: 4.267vw; 
+    width: 88vw;
+    height: 90.667vw;
+    padding: 8vw 9.067vw;
+    border-radius: 4.267vw;
   }
   .modal-password-changed {
-    width: 88vw; 
-    height: 58.133vw; 
-    padding: 8vw 5.186vh; 
-    border-radius: 4.267vw;  
+    width: 88vw;
+    height: 58.133vw;
+    padding: 8vw 5.186vh;
+    border-radius: 4.267vw;
   }
-  .changePasswordForm-block{
+  .changePasswordForm-block {
     gap: 5.6vw;
   }
-  .changePasswordForm{
+  .changePasswordForm {
     align-items: end;
     gap: 10.667vw;
   }
-  .modal-block{
+  .modal-block {
     gap: 4vw;
   }
-  .modal-title_image{
+  .modal-title_image {
     width: 21.333vw;
     height: 21.333vw;
   }
-  .modal-title_image-svg{
+  .modal-title_image-svg {
     width: 9.067vw;
     height: 9.067vw;
   }
-  .modal_text{
+  .modal_text {
     height: fit-content;
     font-size: 4.267vw;
   }
