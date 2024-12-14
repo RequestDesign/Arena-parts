@@ -231,6 +231,12 @@
   display: none;
 }
 @media (max-width: 48em) {
+  .container-fluid {
+    margin: 0;
+    margin-left: 2.865vw !important;
+    margin-right: 2.865vw !important;
+    width: 94.27vw !important;
+  }
   .header {
     margin-top: 2vh;
     margin-bottom: 3vh;

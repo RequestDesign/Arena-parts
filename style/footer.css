@@ -132,6 +132,12 @@
   width: 8.385vw;
 }
 @media (max-width: 48em) {
+  .container-fluid {
+    margin: 0;
+    margin-left: 2.865vw !important;
+    margin-right: 2.865vw !important;
+    width: 94.27vw !important;
+  }
   .footer {
     margin-top: 100px;
   }
