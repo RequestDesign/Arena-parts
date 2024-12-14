@@ -205,6 +205,8 @@
             <div class="header-down"></div>
             <a href="about.html" class="dropdown-item">О нас</a>
             <div class="header-down"></div>
+            <a href="personalAccountPersonal.HTML" class="dropdown-item">личный кабинет</a>
+            <div class="header-down"></div>
           </div>
           <div class="main-content_main">
             <div class="main-content_main-content">
@@ -221,7 +223,13 @@
                 <button class="main-link_content-block_title" id="openAuthModal">Вход в личный кабинет</button>
               </div>
             </div>
-            
+            <div class="main-content_main-content">
+              <div class="main-link_content-block_text">Личный кабинет</div>
+              <div class="main-link_content-block">
+                <button class="main-link_content-block_title" id="openChangePasswordModal">Изменить пароль</button>
+                <button class="main-link_content-block_title" id="openPasswordChangedModal">Пароль успешно изменен!</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -251,7 +259,7 @@
         </div>
       </div>
 
-        <div id="registerModal" class="modal">
+      <div id="registerModal" class="modal">
           <div class="modal-register">
               <span class="close-auth" id="closeRegisterModal">
                 <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -273,7 +281,48 @@
               </form>
               <div class="form_modal-register_bottom"><a href="#" id="openAuthModal" class="openAuthModal">Войти</a></div>
           </div>
+      </div>
+      <div id="changePasswordModal" class="modal">
+        <div class="modal-change-password">
+          <span class="close-auth" id="closeChangePasswordModal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <div class="modal_title">Изменить пароль</div>
+            <form id="changePasswordForm" class="changePasswordForm">
+              <div class="changePasswordForm-block">
+                <input class="form-modal_input" type="password" id="oldPassword" name="oldPassword" placeholder="Старый пароль:" required>
+                <input class="form-modal_input" type="password" id="newPassword" name="newPassword" placeholder="Новый пароль:" required>
+                <input class="form-modal_input" type="password" id="confirmNewPassword" name="confirmNewPassword" placeholder="Повторите новый пароль:" required>
+              </div>
+              <button type="submit" class="link-main">Сохранить
+                <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                </svg> 
+               </button>
+            </form>
         </div>
+    </div>
+    
+    <div id="passwordChangedModal" class="modal" > 
+        <div class="modal-password-changed">
+          <span class="close-auth" id="closePasswordChangedModal">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </span>
+          <div class="modal-block">
+            <div class="modal-title_image">
+              <svg class="modal-title_image-svg" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4692 25.5001C14.2749 25.4995 14.0829 25.4589 13.905 25.3809C13.7271 25.303 13.5671 25.1892 13.435 25.0468L6.55002 17.7226C6.29265 17.4483 6.15478 17.0831 6.16673 16.7071C6.17869 16.3312 6.33949 15.9754 6.61377 15.718C6.88805 15.4607 7.25333 15.3228 7.62927 15.3347C8.0052 15.3467 8.36098 15.5075 8.61835 15.7818L14.455 22.0009L26.3692 8.96762C26.4901 8.81706 26.6405 8.6928 26.8112 8.60249C26.9819 8.51218 27.1692 8.45771 27.3617 8.44243C27.5542 8.42715 27.7478 8.45139 27.9305 8.51365C28.1133 8.57591 28.2815 8.67488 28.4246 8.80448C28.5677 8.93408 28.6829 9.09158 28.7629 9.2673C28.843 9.44302 28.8863 9.63325 28.8902 9.82631C28.894 10.0194 28.8584 10.2112 28.7854 10.39C28.7124 10.5687 28.6037 10.7307 28.4659 10.866L15.5175 25.0326C15.3867 25.1776 15.2273 25.294 15.0493 25.3745C14.8713 25.4549 14.6786 25.4977 14.4834 25.5001H14.4692Z" fill="#1A5FBC"/>
+              </svg>                           
+            </div>
+            <div class="modal_text">Пароль успешно изменен!</div>
+          </div>
+          
+        </div>
+    </div>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>
@@ -287,6 +336,7 @@
     }
     .main-link{
       margin-top: 2.604vw;
+      margin-bottom: 12.604vw;
     }
     .dropdown-item {
       text-align: center;

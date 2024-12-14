@@ -96,7 +96,7 @@ body {
   border-radius: 100px;
 }
 .link-main {
-  font-family: "Rubik";
+  font-family: "Rubik", sans-serif;
   font-size: 0.833vw;
   font-weight: 400;
   line-height: normal;
@@ -109,6 +109,7 @@ body {
   align-items: center;
   text-transform: uppercase;
   border: none;
+  letter-spacing: 1px;
 }
 .arr-icon {
   background-color: white;
@@ -1579,6 +1580,13 @@ body {
   border-radius: 6px;
   border: 1px solid rgba(238, 242, 246, 1);
   color: rgba(184, 184, 184, 1);
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
 }
 .form-modal_input::placeholder {
   color: rgba(184, 184, 184, 1);
@@ -1620,6 +1628,7 @@ body {
   text-decoration: none;
 }
 .close-auth {
+  cursor: pointer;
   position: absolute;
   top: 1.042vw;
   right: 1.198vw;
@@ -1736,6 +1745,72 @@ body {
   border: none;
   background: none;
   color: rgba(26, 95, 188, 1);
+}
+/* modal password */
+.modal-change-password {
+  display: grid;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  width: 31.25vw;
+  height: 28.333vw;
+  min-width: 31.25vw;
+  padding: 3.646vw 4.167vw;
+  border-radius: 0.833vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-password-changed {
+  display: grid;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  width: 30.781vw;
+  height: 17.917vw;
+  padding: 3.646vw 4.167vw;
+  border-radius: 0.833vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.changePasswordForm-bottom{
+  display: flex;
+  align-items: end;
+}
+.modal-block {
+  display: grid;
+  gap: 1.563vw;
+  justify-items: center;
+}
+.modal_text {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.modal-title_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 4.167vw;
+  height: 4.167vw;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1.198vw;
+  border-radius: 100%;
+}
+.modal-title_image-svg {
+  width: 1.771vw;
+  height: 1.771vw;
+}
+.changePasswordForm {
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  gap: 2.083vw;
+}
+.changePasswordForm-block {
+  display: grid;
+  gap: 1.094vw;
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -2449,16 +2524,16 @@ body {
   /* modal */
 
   .modal-auth {
-    width: 88vw; 
-    height: 84vw; 
-    padding: 8vw 9.067vw; 
-    border-radius: 4.267vw; 
+    width: 88vw;
+    height: 84vw;
+    padding: 8vw 9.067vw;
+    border-radius: 4.267vw;
   }
   .modal-register {
-    width: 88vw; 
+    width: 88vw;
     height: 84vw;
-    padding: 8vw 9.067vw; 
-    border-radius: 4.267vw; 
+    padding: 8vw 9.067vw;
+    border-radius: 4.267vw;
   }
   .modal-register {
     gap: 8vw;
@@ -2489,62 +2564,98 @@ body {
     font-size: 3.733vw;
   }
   #loginButton {
-    color: #007bff; 
+    color: #007bff;
     text-decoration: none;
-    font-weight: bold; 
+    font-weight: bold;
   }
   #loginButton:hover {
-    text-decoration: underline; 
+    text-decoration: underline;
   }
   /* personalAccount */
-  .main-personalAccount{
+  .main-personalAccount {
     margin-top: 9.6vw;
     margin-bottom: 26.667vw;
   }
-  .personalAccount-content_top-title{
+  .personalAccount-content_top-title {
     font-size: 4.267vw;
   }
-  .personalAccount-content_main{
+  .personalAccount-content_main {
     display: grid;
 
     gap: 5.333vw;
   }
-  .personalAccount-content_main-left{
+  .personalAccount-content_main-left {
     width: 94.27vw;
     height: 61.333vw;
     padding: 5.333vw;
     gap: 5.6vw;
   }
-  .personalAccount-content_left-data{
+  .personalAccount-content_left-data {
     font-size: 3.733vw;
   }
-  .personalAccount-content_main-rigth{
+  .personalAccount-content_main-rigth {
     display: grid;
     gap: 1.333vw;
   }
-  .personalAccount-content_main-rigth_block{
+  .personalAccount-content_main-rigth_block {
     display: grid;
     gap: 1.333vw;
   }
-  .personalAccount-content_main-rigth_bottom{
+  .personalAccount-content_main-rigth_bottom {
     margin-top: 4vw;
     justify-content: center;
   }
-  .personalAccount-label,.asterisk-color{
+  .personalAccount-label,
+  .asterisk-color {
     font-size: 3.467vw;
   }
-  .personalAccount-label{
+  .personalAccount-label {
     font-size: 3.467vw;
     margin-left: 1.6vw;
   }
-  .personalAccount-input{
+  .personalAccount-input {
     width: 94.27vw;
     height: 10.667vw;
   }
-  .personalAccount-rigth_block-input{
+  .personalAccount-rigth_block-input {
     gap: 2.667vw;
   }
-  .personalAccount-content_main-rigth_password{
+  .personalAccount-content_main-rigth_password {
     font-size: 3.733vw;
+  }
+  /* modal-password */
+  .modal-change-password {
+    width: 88vw; 
+    height: 90.667vw; 
+    padding: 8vw 9.067vw;; 
+    border-radius: 4.267vw; 
+  }
+  .modal-password-changed {
+    width: 88vw; 
+    height: 58.133vw; 
+    padding: 8vw 5.186vh; 
+    border-radius: 4.267vw;  
+  }
+  .changePasswordForm-block{
+    gap: 5.6vw;
+  }
+  .changePasswordForm{
+    align-items: end;
+    gap: 10.667vw;
+  }
+  .modal-block{
+    gap: 4vw;
+  }
+  .modal-title_image{
+    width: 21.333vw;
+    height: 21.333vw;
+  }
+  .modal-title_image-svg{
+    width: 9.067vw;
+    height: 9.067vw;
+  }
+  .modal_text{
+    height: fit-content;
+    font-size: 4.267vw;
   }
 }

@@ -89,10 +89,6 @@ document.querySelectorAll(".catalog-menu_btn").forEach((button) => {
   });
 });
 
-
-
-
-
 const authModal = document.getElementById("authModal");
 const registerModal = document.getElementById("registerModal");
 
@@ -112,12 +108,40 @@ document.getElementById("closeRegisterModal").onclick = function () {
   registerModal.style.display = "none";
 };
 
-// Закрытие модального окна при клике вне его
 window.onclick = function (event) {
   if (event.target == authModal) {
     authModal.style.display = "none";
   }
   if (event.target == registerModal) {
     registerModal.style.display = "none";
+  }
+};
+
+const changePasswordModal = document.getElementById("changePasswordModal");
+const passwordChangedModal = document.getElementById("passwordChangedModal");
+
+document.getElementById("openChangePasswordModal").onclick = function () {
+  changePasswordModal.style.display = "flex"; 
+};
+
+document.getElementById("openPasswordChangedModal").onclick = function () {
+  passwordChangedModal.style.display = "flex"; 
+};
+
+document.getElementById("closeChangePasswordModal").onclick = function () {
+  changePasswordModal.style.display = "none"; 
+};
+
+document.getElementById("closePasswordChangedModal").onclick = function () {
+  passwordChangedModal.style.display = "none"; 
+};
+
+
+window.onclick = function (event) {
+  if (event.target == changePasswordModal) {
+    changePasswordModal.style.display = "none"; 
+  }
+  if (event.target == passwordChangedModal) {
+    passwordChangedModal.style.display = "none"; 
   }
 };
