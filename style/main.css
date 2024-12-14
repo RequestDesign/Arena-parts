@@ -1928,6 +1928,142 @@ body {
 .cancel-text_expired {
   color: rgba(105, 110, 118, 1);
 }
+
+/* Orders */
+.personalAccountOrders-content_top {
+  display: grid;
+  gap: 1.563vw;
+}
+.personalAccount-content_top-text {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.orders-content_main-rigth {
+  display: grid;
+  gap: 2.083vw;
+}
+.orders-main_rigth-title {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.orders-main_rigth-item_image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 11.094vw;
+  height: 6.51vw;
+  border-radius: 16px;
+  border: 1px solid rgba(216, 224, 233, 1);
+}
+.orders-main_rigth-item {
+  display: flex;
+  width: 72.344vw;
+  height: 6.615vw;
+}
+.orders-item_block-image {
+  width: 10.094vw;
+  height: 5.31vw;
+}
+.orders-bottom_item-content {
+  width: 100%;
+  padding: 0.833vw 1.042vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orders-product-block_bottom {
+  display: flex;
+  align-items: center;
+  gap: 5.208vw;
+}
+.orders-product_block-counter {
+  display: flex;
+  align-items: center;
+  gap: 1.042vw;
+}
+.orders-circle {
+  width: 3.125vw;
+  height: 3.125vw;
+  color: rgba(18, 18, 18, 0.3);
+  border-radius: 100%;
+  background: none;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+.orders-circle_active {
+  color: rgba(18, 18, 18, 1);
+}
+.orders-num {
+  width: 0.625vw;
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.orders-cancellation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: none;
+  padding: 0.625vw;
+  width: 2.188vw;
+  height: 2.188vw;
+  border-radius: 0.313vw;
+  border: 1px solid rgba(18, 18, 18, 0.16);
+}
+.cancellation-svg {
+  width: 0.938vw;
+  height: 0.938vw;
+}
+.orders-content_main-rigth_line {
+  border: 0.052vw solid rgba(216, 224, 233, 1);
+  height: fit-content;
+}
+.orders-main_rigth-block {
+  display: grid;
+  gap: 1.094vw;
+}
+.orders-main_rigth-block_item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.orders-rigth-item_text-black {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.orders-rigth-item_text-gruy,
+.orders-rigth-item_text-gruy_t {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.orders-product-block_main{
+  display: grid;
+  gap: 0.625vw;
+}
 /* modal password */
 .modal-change-password {
   display: grid;
@@ -2703,8 +2839,8 @@ body {
   .main-proposal {
     margin-bottom: 26.667vw;
   }
-  /* modal */
 
+  /* modal */
   .modal-auth {
     width: 88vw;
     height: 84vw;
@@ -2861,29 +2997,115 @@ body {
     justify-content: space-between;
     align-content: space-between;
   }
-  .personalAccountOrders-left_numder{
+  .personalAccountOrders-left_numder {
     font-size: 3.733vw;
   }
-  .personalAccountOrders-left_status{
+  .personalAccountOrders-left_status {
     font-size: 3.733vw;
     padding: 1.6vw;
     height: fit-content;
     border-radius: 1.6vw;
   }
-  .personalAccountOrders-left_data{
+  .personalAccountOrders-left_data {
     font-size: 3.733vw;
   }
-  .personalAccountOrders-item_left{
+  .personalAccountOrders-item_left {
     align-content: space-between;
   }
-  .personalAccountOrders-item_rigth-price{
+  .personalAccountOrders-item_rigth-price {
     font-size: 3.733vw;
   }
-  .personalAccountOrders-item_rigth-quantity{
+  .personalAccountOrders-item_rigth-quantity {
     font-size: 3.733vw;
   }
-  .cancel-text{
+  .cancel-text {
     font-size: 3.733vw;
+  }
+  .personalAccount-content_top-title {
+    font-size: 4.267vw;
+  }
+  .personalAccount-content_top-text {
+    font-size: 3.467vw;
+  }
+  .personalAccount-content_main-left {
+    order: 2;
+  }
+  .orders-bottom_item-content {
+    display: grid;
+    padding-top: 0;
+    padding-left: 2.133vw;
+    height: fit-content;
+    display: grid;
+    gap: 9.067vw;
+  }
+  .orders-product-block_main{
+    display: grid;
+    gap: 1.333vw;
+  }
+  .orders-rigth-item_text-gruy {
+    font-size: 3.467vw;
+    text-align: right;
+    width: 39.2vw;
+  }
+  .orders-rigth-item_text-gruy_t {
+    font-size: 3.467vw;
+    text-align: left;
+  }
+  .orders-rigth-item_text-black {
+    font-size: 4.267vw;
+  }
+  .orders-main_rigth-block {
+    gap: 4vw;
+  }
+  .orders-content_main-rigth {
+    gap: 8.533vw;
+  }
+  .orders-main_rigth-title {
+    font-size: 3.467vw;
+  }
+  .orders-main_rigth-item {
+    width: 94.27vw;
+    height: 33.067vw;
+  }
+  .orders-product-block_bottom{
+    justify-content: space-between;
+  }
+  .orders-cancellation{
+    width: 7.467vw;
+    height: 7.467vw;
+    border-radius: 6px;
+    order: 3;
+  }
+  .cancellation-svg{
+    width: 4.8vw;
+    height: 4.8vw;
+  }
+  .orders-product_block-counter{
+    order: 2;
+    gap: 5.333vw;
+  }
+  .orders-circle{
+    width: 7.467vw;
+    height: 7.467vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .orders-num{
+    width: 4.267vw;
+    font-size: 4.267vw;
+  }
+  .orders-circle_menus{
+    margin-top: -1.467vw;
+    font-size: 7.267vw;
+  }
+  .orders-main_rigth-item_image{
+    width: 22.4vw;
+    height: 22.4vw;
+  }
+  .orders-item_block-image{
+    width: 19.4vw;
+    height: 14.6vw;
   }
   /* modal-password */
   .modal-change-password {

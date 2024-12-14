@@ -121,27 +121,27 @@ const changePasswordModal = document.getElementById("changePasswordModal");
 const passwordChangedModal = document.getElementById("passwordChangedModal");
 
 document.getElementById("openChangePasswordModal").onclick = function () {
-  changePasswordModal.style.display = "flex"; 
+  changePasswordModal.style.display = "flex";
 };
 
 document.getElementById("openPasswordChangedModal").onclick = function () {
-  passwordChangedModal.style.display = "flex"; 
+  passwordChangedModal.style.display = "flex";
 };
 
 document.getElementById("closeChangePasswordModal").onclick = function () {
-  changePasswordModal.style.display = "none"; 
+  changePasswordModal.style.display = "none";
 };
 
 document.getElementById("closePasswordChangedModal").onclick = function () {
-  passwordChangedModal.style.display = "none"; 
+  passwordChangedModal.style.display = "none";
 };
-
 
 window.onclick = function (event) {
   if (event.target == changePasswordModal) {
-    changePasswordModal.style.display = "none"; 
+    changePasswordModal.style.display = "none";
   }
   if (event.target == passwordChangedModal) {
-    passwordChangedModal.style.display = "none"; 
+    passwordChangedModal.style.display = "none";
   }
 };
+
