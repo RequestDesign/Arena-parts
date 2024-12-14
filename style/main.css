@@ -1829,6 +1829,105 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+/* personalAccountOrders */
+.personalAccountOrders-content_main-rigth {
+  display: grid;
+  gap: 1.094vw;
+}
+.personalAccountOrders-item {
+  border: 1px solid rgba(216, 224, 233, 1);
+  width: 72.344vw;
+  height: 11.146vw;
+  padding: 2.083vw;
+  border-radius: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+.personalAccountOrders-item_left {
+  display: grid;
+  gap: 1.563vw;
+}
+.personalAccountOrders-left_numder {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.personalAccountOrders-left_status {
+  width: fit-content;
+  height: 1.667vw;
+  padding: 0.313vw;
+  border-radius: 0.313vw;
+  background: rgba(18, 18, 18, 1);
+  color: white;
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.personalAccountOrders-left_data {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.personalAccountOrders-item_rigth {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 25.365vw;
+}
+.personalAccountOrders-item_rigth-block {
+  display: grid;
+  gap: 1.563vw;
+}
+.personalAccountOrders-item_rigth-price {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.personalAccountOrders-item_rigth-quantity {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.cancel-text {
+  border: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  gap: 0.417vw;
+  color: rgba(26, 95, 188, 1);
+  font-family: Sansation;
+  font-size: 0.938vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.cancel-text_expired {
+  color: rgba(105, 110, 118, 1);
+}
 /* modal password */
 .modal-change-password {
   display: grid;
@@ -2721,35 +2820,70 @@ body {
     justify-items: center;
     gap: 7.733vw;
   }
-  .personalAccountCar-item_title{
+  .personalAccountCar-item_title {
     font-size: 3.733vw;
   }
-  .car-image{
+  .car-image {
     width: 88.267vw;
     height: 35.733vw;
   }
-  .delete-text{
+  .delete-text {
     font-size: 3.733vw;
     gap: 2.133vw;
   }
-  .delete-svg{
+  .delete-svg {
     width: 5.4vw;
     height: 5.4vw;
     /* padding: 6px; */
   }
-  .add-item_plus{
+  .add-item_plus {
     width: 18.667vw;
     height: 18.667vw;
   }
-  .plus-svg{
+  .plus-svg {
     width: 4.567vw;
     height: 13.533vw;
   }
-  .add-item{
+  .add-item {
     gap: 5.333vw;
   }
-  .add-item_text{
+  .add-item_text {
     font-size: 4.8vw;
+  }
+  /* personalAccountOrders */
+  .personalAccountOrders-item {
+    width: 100%;
+    height: 30.4vw;
+    padding: 4.267vw;
+  }
+  .personalAccountOrders-item_rigth {
+    display: grid;
+    justify-content: space-between;
+    align-content: space-between;
+  }
+  .personalAccountOrders-left_numder{
+    font-size: 3.733vw;
+  }
+  .personalAccountOrders-left_status{
+    font-size: 3.733vw;
+    padding: 1.6vw;
+    height: fit-content;
+    border-radius: 1.6vw;
+  }
+  .personalAccountOrders-left_data{
+    font-size: 3.733vw;
+  }
+  .personalAccountOrders-item_left{
+    align-content: space-between;
+  }
+  .personalAccountOrders-item_rigth-price{
+    font-size: 3.733vw;
+  }
+  .personalAccountOrders-item_rigth-quantity{
+    font-size: 3.733vw;
+  }
+  .cancel-text{
+    font-size: 3.733vw;
   }
   /* modal-password */
   .modal-change-password {
