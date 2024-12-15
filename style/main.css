@@ -2070,7 +2070,7 @@ body {
   height: 6.615vw;
 }
 .orders-item_block-image {
-  width: 10.094vw;
+  width: 9vw;
   height: 5.31vw;
 }
 .orders-bottom_item-content {
@@ -2294,6 +2294,7 @@ body {
   border: 1px solid rgba(238, 242, 246, 1);
 }
 .sear-input {
+  padding: 1.979vw 1.875vw;
   width: 100%;
   outline: none;
   border: none;
@@ -2326,6 +2327,209 @@ body {
   display: grid;
   justify-items: center;
   gap: 2.344vw;
+}
+/* decoration */
+.decoration-content_bottom {
+  display: grid;
+  gap: 2.031vw;
+  width: 19.323vw;
+  height: 23.75vw;
+  padding: 2.604vw;
+  border-radius: 16px;
+  background: rgba(247, 250, 253, 1);
+}
+.decoration-content_bottom-title {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.decoration-content_bottom-block {
+  display: flex;
+  justify-content: space-between;
+}
+.decoration-content_bottom-block_title {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.decoration-content_bottom-box {
+  display: grid;
+  gap: 1.042vw;
+}
+.decoration-content_bottom-block_text {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.decoration-content_bottom-block_price {
+  font-family: "Sansation";
+  font-size: 1.667vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(26, 95, 188, 1);
+}
+.decoration-content_bottom-btn {
+  display: flex;
+}
+.decoration-content_bottom-btn .link-main {
+  height: 2.917vw;
+  padding-left: 1.25vw;
+  padding-right: 1.25vw;
+}
+.basket-container_main {
+  margin: 9.375vw 0;
+}
+.basket-container_main-data {
+  margin-bottom: 5.208vw;
+  position: relative;
+}
+.basket-container_main-data_block {
+  margin-left: 2.667vw;
+  margin-top: 3.167vw;
+  display: grid;
+  gap: 4.167vw;
+}
+.basket-container_main-data_title {
+  display: flex;
+  align-items: center;
+  gap: 1.667vw;
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.basket-container_main-data_title-circle {
+  width: 1.042vw;
+  height: 1.042vw;
+  background: rgba(26, 95, 188, 1);
+  border-radius: 100px;
+}
+.decoration-input {
+  padding: 1.979vw 1.875vw;
+  width: 41.667vw;
+  height: 3.021vw;
+  border-radius: 0.521vw;
+  border: 1px solid rgba(238, 242, 246, 1);
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.basket-container_main-data_block-input {
+  display: grid;
+  gap: 1.979vw;
+}
+.basket-block_input {
+  display: grid;
+  gap: 0.521vw;
+}
+.decoration-input_block {
+  padding: 1.979vw 1.875vw;
+  width: 31.094vw;
+  height: 3.021vw;
+  border-radius: 0.521vw;
+  border: 1px solid rgba(238, 242, 246, 1);
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.decoration-input_now {
+  padding: 1.979vw 1.875vw;
+  width: 19.323vw;
+  height: 3.021vw;
+  border-radius: 0.521vw;
+  border: 1px solid rgba(238, 242, 246, 1);
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.comment {
+  padding: 1.979vw 1.875vw;
+  width: 66.146vw;
+  height: 5.365vw;
+  border-radius: 0.521vw;
+  border: 1px solid rgba(238, 242, 246, 1);
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.basket-container_block-input_title {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.basket-container_main-data_block-radio {
+  display: flex;
+  gap: 2.917vw;
+}
+.basket-container_radio {
+  display: flex;
+  align-items: center;
+  gap: 0.521vw;
+}
+.basket-radio_text {
+  font-family: "Sansation";
+  font-size: 1.146vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.basket-radio[type="radio"] {
+  accent-color: rgba(26, 95, 188, 0.2);
+  width: 1.146vw;
+  height: 1.146vw;
+  border: 1px solid rgba(238, 242, 246, 1);
+}
+.basket-container_main-line {
+  position: absolute;
+  border: 1px solid rgba(216, 224, 233, 1);
+  height: 78.281vw;
+  left: 0.525vw;
+  top: 0.885vw;
+  z-index: -1;
+}
+.orders-circle_menus {
+  font-size: 1.229vw;
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -2852,7 +3056,7 @@ body {
     font-size: 4.267vw;
   }
   /* .basket */
-  .basket-content_main{
+  .basket-content_main {
     gap: 6.4vw;
   }
   .basket-main_rigth-item {
@@ -2881,16 +3085,16 @@ body {
     padding: 13.333vw;
     border-radius: 16px;
   }
-  .basket-content_bottom-text{
+  .basket-content_bottom-text {
     font-size: 3.733vw;
   }
-  .basket-content_bottom-result_text{
+  .basket-content_bottom-result_text {
     font-size: 4.267vw;
   }
-  .basket-content_bottom-result_price{
+  .basket-content_bottom-result_price {
     font-size: 5.333vw;
   }
-  .basket-content_bottom .link-main{
+  .basket-content_bottom .link-main {
     height: auto;
     padding: 2.133vw 3.2vw;
   }
@@ -3346,6 +3550,84 @@ body {
   .orders-item_block-image {
     width: 19.4vw;
     height: 14.6vw;
+  }
+  /* decoration-content_bottom */
+  .decoration-content_bottom {
+    width: 94vw;
+    height: 73.6vw;
+    padding: 6.133vw 13.333vw;
+    border-radius: 4.267vw;
+    gap: 5.067vw;
+  }
+  .decoration-content_bottom-title {
+    font-size: 4.267vw;
+    height: fit-content;
+  }
+  .decoration-content_bottom-block_title {
+    font-size: 3.733vw;
+  }
+  .decoration-content_bottom-block_text {
+    font-size: 3.467vw;
+  }
+  .decoration-content_bottom-box {
+    gap: 8vw;
+  }
+  .decoration-content_bottom-block_price {
+    font-size: 5.333vw;
+  }
+  .decoration-content_bottom-btn .link-main {
+    height: auto;
+    padding: 2.133vw 3.2vw;
+  }
+  .basket-container_main-line{
+    display: none;
+  }
+  .basket-container_main-data_title-circle{
+    display: none;
+  }
+  .basket-container_main-data_block{
+    margin-top: 5.333vw;
+    margin-left: 0;
+    gap: 8vw;
+  }
+  .basket-container_main-data_title{
+    font-size: 4.267vw;
+  }
+  .basket-block_input{
+    gap: 2.667vw;
+  }
+  .decoration-input{
+    width: 100%;
+    height: 10.667vw;
+    font-size: 3.467vw;
+  }
+  .basket-container_block-input_title{
+    font-size: 3.733vw;
+  }
+  .decoration-input_block{
+    width: 100%;
+    height: 10.667vw;
+    font-size: 3.467vw;
+  }
+  .decoration-input_now{
+    width: 100%;
+    height: 10.667vw;
+    font-size: 3.467vw;
+  }
+  .comment{
+    width: 100%;
+    height: 10.667vw;
+    font-size: 3.467vw;
+  }
+  .basket-container_radio{
+    gap: 2.667vw;
+  }
+  .basket-radio_text{
+    font-size: 3.467vw;
+  }
+  .basket-radio[type="radio"]{
+    width: 5.867vw;
+    height: 5.867vw;
   }
   /* modal-password */
   .modal-change-password {

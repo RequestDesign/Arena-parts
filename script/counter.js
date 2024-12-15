@@ -1,29 +1,52 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const orderCountElement = document.getElementById("orderCount");
-  const decreaseButton = document.getElementById("decreaseButton");
-  const increaseButton = document.getElementById("increaseButton");
+  const counters = document.querySelectorAll(".orders-product_block-counter");
 
-  let productCount = 1;
+  counters.forEach(counter => {
+      const orderCountElement = counter.querySelector(".order-count");
+      const decreaseButton = counter.querySelector(".decrease-button");
+      const increaseButton = counter.querySelector(".increase-button");
 
-  function updateProductButtonState() {
-    if (productCount > 1) {
-      decreaseButton.classList.add("orders-circle_active");
-    } else {
-      decreaseButton.classList.remove("orders-circle_active");
-    }
-  }
-  updateProductButtonState();
-  increaseButton.addEventListener("click", () => {
-    productCount++;
-    orderCountElement.textContent = productCount;
-    updateProductButtonState();
-  });
+      let productCount = 1;
 
-  decreaseButton.addEventListener("click", () => {
-    if (productCount > 1) {
-      productCount--;
-      orderCountElement.textContent = productCount;
+      function updateProductButtonState() {
+          if (productCount > 1) {
+              decreaseButton.classList.add("orders-circle_active");
+          } else {
+              decreaseButton.classList.remove("orders-circle_active");
+          }
+      }
+
       updateProductButtonState();
-    }
+
+      increaseButton.addEventListener("click", () => {
+          productCount++;
+          orderCountElement.textContent = productCount;
+          updateProductButtonState();
+      });
+
+      decreaseButton.addEventListener("click", () => {
+          if (productCount > 1) {
+              productCount--;
+              orderCountElement.textContent = productCount;
+              updateProductButtonState();
+          }
+      });
   });
+});
+
+
+const deliveryBtn = document.getElementById("delivery-btn");
+const pickupBtn = document.getElementById("pickup-btn");
+
+function toggleActiveButton(activeBtn, inactiveBtn) {
+  activeBtn.classList.add("catalog-btn_active");
+  inactiveBtn.classList.remove("catalog-btn_active");
+}
+
+deliveryBtn.addEventListener("click", () => {
+  toggleActiveButton(deliveryBtn, pickupBtn);
+});
+
+pickupBtn.addEventListener("click", () => {
+  toggleActiveButton(pickupBtn, deliveryBtn);
 });
