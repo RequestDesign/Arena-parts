@@ -1182,6 +1182,104 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
+/* basket */
+.basket-content {
+  display: flex;
+  justify-content: space-between;
+}
+.basket-content_top {
+  display: flex;
+  justify-content: space-between;
+}
+.basket-content_main {
+  display: grid;
+  gap: 4.167vw;
+}
+.basket-main_rigth-item {
+  display: flex;
+  width: 62.135vw;
+}
+.basket-main_rigth-item .orders-product-block_bottom {
+  gap: 1.875vw !important;
+}
+.basket-content_top-text_btn {
+  display: flex;
+  align-items: center;
+  gap: 0.521vw;
+  border: none;
+  background: none;
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(26, 95, 188, 1);
+}
+.basket-content_bottom {
+  display: grid;
+  justify-content: space-between;
+  gap: 2.031vw;
+  width: 19.063vw;
+  height: 15.208vw;
+  padding: 2.604vw;
+  border-radius: 0.833vw;
+  background-color: rgba(247, 250, 253, 1);
+}
+.basket-content_bottom .link-main {
+  height: 2.917vw;
+  padding-left: 0.417vw;
+}
+.basket-content_bottom-text {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.basket-content_bottom-result {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.basket-content_bottom-result_text {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.basket-content_bottom-result_price {
+  font-family: "Sansation";
+  font-size: 1.667vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(26, 95, 188, 1);
+}
+.basket_top-title {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(19, 27, 55, 1);
+}
+.basket-svg {
+  width: 1.25vw;
+  height: 1.25vw;
+}
 /*delivery */
 .main-delivery {
   margin-top: 4.167vw;
@@ -2224,7 +2322,7 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-.car-image-container{
+.car-image-container {
   display: grid;
   justify-items: center;
   gap: 2.344vw;
@@ -2753,6 +2851,49 @@ body {
   .main-mistake_content-block_text {
     font-size: 4.267vw;
   }
+  /* .basket */
+  .basket-content_main{
+    gap: 6.4vw;
+  }
+  .basket-main_rigth-item {
+    width: 94.27vw;
+  }
+  .basket-content {
+    display: grid;
+    gap: 5.333vw;
+  }
+  .basket-content_top-text_btn {
+    font-size: 3.733vw;
+  }
+  .basket-svg {
+    width: 5.067vw;
+    height: 5.067vw;
+  }
+  .basket_top-title {
+    font-size: 4.267vw;
+  }
+  .basket-content_bottom {
+    gap: 5.333vw;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 55.467vw;
+    padding: 13.333vw;
+    border-radius: 16px;
+  }
+  .basket-content_bottom-text{
+    font-size: 3.733vw;
+  }
+  .basket-content_bottom-result_text{
+    font-size: 4.267vw;
+  }
+  .basket-content_bottom-result_price{
+    font-size: 5.333vw;
+  }
+  .basket-content_bottom .link-main{
+    height: auto;
+    padding: 2.133vw 3.2vw;
+  }
   /*delivery */
   .main-delivery {
     margin-top: 9.6vw;
@@ -3264,33 +3405,33 @@ body {
     order: 2;
   }
   /* findCarModal */
-  .modal-findCarModal{
+  .modal-findCarModal {
     width: 88vw;
     height: 69.6vw;
     border-radius: 16px;
     padding: 8vw 9.867vw;
   }
-  .input-container{
+  .input-container {
     width: 68.267vw;
     height: 10.667vw;
     gap: 2.667vw;
     padding: 2.133vw 2.133vw 2.133vw 8vw;
   }
-  .sear-svg{
+  .sear-svg {
     width: 6.4vw;
     height: 6.4vw;
   }
-  .sear-input{
+  .sear-input {
     font-size: 3.467vw;
   }
   /* confirmAddCarModal */
-  .modal-confirmAddCarModal{
+  .modal-confirmAddCarModal {
     width: 88vw;
     height: 75.733vw;
     border-radius: 16px;
     padding: 8.8vw 9.867vw;
   }
-  .car-title{
+  .car-title {
     font-size: 3.467vw;
   }
 }
