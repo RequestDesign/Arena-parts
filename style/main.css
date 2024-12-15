@@ -2134,8 +2134,8 @@ body {
 .modal-cancelModal {
   width: 31.25vw;
   height: 17.448vw;
-  min-width: 600px;
-  padding: 3.646vw 4.167vw; 
+  min-width: 31.25vw;
+  padding: 3.646vw 2.292vw;
   display: grid;
   justify-items: center;
   gap: 2.344vw;
@@ -2145,16 +2145,89 @@ body {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 /* successModal */
-.modal-successModal{
-  width: 30.781vw; 
+.modal-successModal {
+  width: 30.781vw;
   height: 15.469vw;
-  padding: 3.646vw 4.167vw; 
+  padding: 3.646vw 4.167vw;
   display: grid;
   gap: 2.344vw;
   position: relative;
   background-color: #fefefe;
   border-radius: 0.833vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-findCarModal {
+  width: 31.25vw;
+  height: 22.448vw;
+  padding: 3.646vw 4.167vw;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 0.833vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.modal-confirmAddCarModal {
+  width: 31.25vw;
+  height: 27.344vw;
+  padding: 3.646vw 4.167vw;
+  display: grid;
+  justify-items: center;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 0.833vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.button-container {
+  display: grid;
+  align-items: end;
+}
+.input-container {
+  display: flex;
+  align-items: center;
+  gap: 0.521vw;
+  width: 23.542vw;
+  height: 2.917vw;
+  padding: 1.042vw 1.563vw 1.042vw 1.042vw;
+  border-radius: 100px;
+  border: 1px solid rgba(238, 242, 246, 1);
+}
+.sear-input {
+  width: 100%;
+  outline: none;
+  border: none;
+  background: none;
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.sear-input::placeholder {
+  color: rgba(184, 184, 184, 1);
+}
+.sear-svg {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+.car-title {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.car-image-container{
+  display: grid;
+  justify-items: center;
+  gap: 2.344vw;
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -3167,5 +3240,57 @@ body {
   .modal_text {
     height: fit-content;
     font-size: 4.267vw;
+  }
+  /* modal-cancelModal */
+  .modal-cancelModal {
+    width: 88vw;
+    height: 41.6vw;
+    padding: 8vw 9.867vw;
+    border-radius: 16px;
+  }
+  .modal-successModal {
+    width: 88vw;
+    height: 41.6vw;
+    padding: 8vw 9.867vw;
+    border-radius: 16px;
+  }
+  .modal-successModal .modal-block {
+    gap: 2.4vw;
+  }
+  .modal-successModal .modal_text {
+    order: 1;
+  }
+  .modal-successModal .modal-title_image {
+    order: 2;
+  }
+  /* findCarModal */
+  .modal-findCarModal{
+    width: 88vw;
+    height: 69.6vw;
+    border-radius: 16px;
+    padding: 8vw 9.867vw;
+  }
+  .input-container{
+    width: 68.267vw;
+    height: 10.667vw;
+    gap: 2.667vw;
+    padding: 2.133vw 2.133vw 2.133vw 8vw;
+  }
+  .sear-svg{
+    width: 6.4vw;
+    height: 6.4vw;
+  }
+  .sear-input{
+    font-size: 3.467vw;
+  }
+  /* confirmAddCarModal */
+  .modal-confirmAddCarModal{
+    width: 88vw;
+    height: 75.733vw;
+    border-radius: 16px;
+    padding: 8.8vw 9.867vw;
+  }
+  .car-title{
+    font-size: 3.467vw;
   }
 }

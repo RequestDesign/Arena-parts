@@ -234,8 +234,17 @@
             </div>
             <div class="main-content_main-content">
               <div class="main-link_content-block_text">ЛК мои заказы отменить</div>
-              <button class="main-link_content-block_title" id="cancelButton">Отменить запись?</button>
-              <button class="main-link_content-block_title" id="successButton">Запись успешно отменена!</button>
+              <div class="main-link_content-block">
+                <button class="main-link_content-block_title" id="cancelButton">Отменить запись?</button>
+                <button class="main-link_content-block_title" id="successButton">Запись успешно отменена!</button>
+              </div>
+            </div>
+            <div class="main-content_main-content">
+              <div class="main-link_content-block_text">Личный кабинет</div>
+              <div class="main-link_content-block">
+                <button class="main-link_content-block_title" id="openFindCarModal">Добавить автомобиль в гараж (найти)</button>
+                <button class="main-link_content-block_title" id="openConfirmAddCarModal">Добавить автомобиль в гараж (подтвердить)</button>
+              </div>
             </div>
           </div>
         </div>
@@ -365,7 +374,59 @@
         </div>
       </div>
 
-      
+
+    <!-- Модальное окно "Найти автомобиль" -->
+    <div id="findCarModal" class="modal">
+      <div class="modal-findCarModal">
+        <span class="close-auth" id="closeFindCarModal">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </span>
+        <div class="modal_title">Добавление автомобиля в гараж</div>
+        <div class="input-container">
+          <svg class="sear-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M22 22L20 20" stroke="#B8B8B8" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>            
+          <input class="sear-input" type="text" placeholder="Введите VIN/Госномер">
+        </div>
+          <button id="searchCar" class="link-main">Найти
+            <svg class="arr-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.5 21C16.7467 21 21 16.7467 21 11.5C21 6.25329 16.7467 2 11.5 2C6.25329 2 2 6.25329 2 11.5C2 16.7467 6.25329 21 11.5 21Z" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M22 22L20 20" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </button>
+      </div>
+    </div>
+    
+    <!-- Модальное окно "Подтвердить добавление автомобиля" -->
+    <div id="confirmAddCarModal" class="modal">
+        <div class="modal-confirmAddCarModal">
+            <span class="close-auth" id="closeConfirmAddCarModal">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </span>
+            <div class="modal_title">Добавление автомобиля в гараж</div>
+            
+            <!-- Контейнер для изображения автомобиля -->
+            <div class="car-image-container">
+              <div class="modal-title_image">
+                <img class="modal-title_image-svg" src="assets/images/map/car-svg.png" alt="">                         
+              </div>
+              <div class="car-title">BMW X5 2021</div>
+            </div>
+    
+            <div class="button-container">
+              <button id="confirmAddCar" class="link-main">Добавить в гараж
+                <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+        </div>
+    </div>
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>
@@ -428,7 +489,7 @@
       border: none;
       background: none;
     }
-    @media (max-width: 420px) {
+    @media (max-width: 48em) {
       .dropdown-item {
         font-size: 5vw !important;
       }

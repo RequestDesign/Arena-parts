@@ -158,27 +158,22 @@ document.addEventListener("DOMContentLoaded", () => {
   const confirmCancel = document.getElementById("confirmCancel");
   const cancelCancel = document.getElementById("cancelCancel");
 
-  // Открытие модального окна для отмены
   cancelButton.onclick = function () {
     cancelModal.style.display = "flex";
   };
 
-  // Открытие модального окна для успешной отмены
   successButton.onclick = function () {
     successModal.style.display = "flex";
   };
 
-  // Закрытие модального окна для отмены
   cancelClose.onclick = function () {
     cancelModal.style.display = "none";
   };
 
-  // Закрытие модального окна для успешной отмены
   successClose.onclick = function () {
     successModal.style.display = "none";
   };
 
-  // Закрытие модального окна при клике вне его
   window.onclick = function (event) {
     if (event.target === cancelModal) {
       cancelModal.style.display = "none";
@@ -188,10 +183,48 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   };
 
-  // Подтверждение отмены
   confirmCancel.onclick = function () {
-    // Здесь можно добавить логику для отмены записи
     cancelModal.style.display = "none";
-    successModal.style.display = "flex"; // Показываем успешное сообщение
+    successModal.style.display = "flex";
+  };
+});
+
+document.addEventListener("DOMContentLoaded", () => {
+  const openFindCarModal = document.getElementById("openFindCarModal");
+  const openConfirmAddCarModal = document.getElementById(
+    "openConfirmAddCarModal"
+  );
+
+  const findCarModal = document.getElementById("findCarModal");
+  const confirmAddCarModal = document.getElementById("confirmAddCarModal");
+
+  const closeFindCarModal = document.getElementById("closeFindCarModal");
+  const closeConfirmAddCarModal = document.getElementById(
+    "closeConfirmAddCarModal"
+  );
+
+  openFindCarModal.onclick = function () {
+    findCarModal.style.display = "flex";
+  };
+
+  openConfirmAddCarModal.onclick = function () {
+    confirmAddCarModal.style.display = "flex";
+  };
+
+  closeFindCarModal.onclick = function () {
+    findCarModal.style.display = "none";
+  };
+
+  closeConfirmAddCarModal.onclick = function () {
+    confirmAddCarModal.style.display = "none";
+  };
+  
+  window.onclick = function (event) {
+    if (event.target === findCarModal) {
+      findCarModal.style.display = "none";
+    }
+    if (event.target === confirmAddCarModal) {
+      confirmAddCarModal.style.display = "none";
+    }
   };
 });
