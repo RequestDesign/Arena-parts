@@ -2060,7 +2060,7 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
 }
-.orders-product-block_main{
+.orders-product-block_main {
   display: grid;
   gap: 0.625vw;
 }
@@ -2129,6 +2129,32 @@ body {
 .changePasswordForm-block {
   display: grid;
   gap: 1.094vw;
+}
+/* cancelModal */
+.modal-cancelModal {
+  width: 31.25vw;
+  height: 17.448vw;
+  min-width: 600px;
+  padding: 3.646vw 4.167vw; 
+  display: grid;
+  justify-items: center;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 0.833vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+/* successModal */
+.modal-successModal{
+  width: 30.781vw; 
+  height: 15.469vw;
+  padding: 3.646vw 4.167vw; 
+  display: grid;
+  gap: 2.344vw;
+  position: relative;
+  background-color: #fefefe;
+  border-radius: 0.833vw;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -3038,7 +3064,7 @@ body {
     display: grid;
     gap: 9.067vw;
   }
-  .orders-product-block_main{
+  .orders-product-block_main {
     display: grid;
     gap: 1.333vw;
   }
@@ -3067,43 +3093,43 @@ body {
     width: 94.27vw;
     height: 33.067vw;
   }
-  .orders-product-block_bottom{
+  .orders-product-block_bottom {
     justify-content: space-between;
   }
-  .orders-cancellation{
+  .orders-cancellation {
     width: 7.467vw;
     height: 7.467vw;
     border-radius: 6px;
     order: 3;
   }
-  .cancellation-svg{
+  .cancellation-svg {
     width: 4.8vw;
     height: 4.8vw;
   }
-  .orders-product_block-counter{
+  .orders-product_block-counter {
     order: 2;
     gap: 5.333vw;
   }
-  .orders-circle{
+  .orders-circle {
     width: 7.467vw;
     height: 7.467vw;
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  .orders-num{
+  .orders-num {
     width: 4.267vw;
     font-size: 4.267vw;
   }
-  .orders-circle_menus{
+  .orders-circle_menus {
     margin-top: -1.467vw;
     font-size: 7.267vw;
   }
-  .orders-main_rigth-item_image{
+  .orders-main_rigth-item_image {
     width: 22.4vw;
     height: 22.4vw;
   }
-  .orders-item_block-image{
+  .orders-item_block-image {
     width: 19.4vw;
     height: 14.6vw;
   }

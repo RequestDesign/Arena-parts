@@ -145,3 +145,53 @@ window.onclick = function (event) {
   }
 };
 
+document.addEventListener("DOMContentLoaded", () => {
+  const cancelButton = document.getElementById("cancelButton");
+  const successButton = document.getElementById("successButton");
+
+  const cancelModal = document.getElementById("cancelModal");
+  const successModal = document.getElementById("successModal");
+
+  const cancelClose = document.getElementById("cancelClose");
+  const successClose = document.getElementById("successClose");
+
+  const confirmCancel = document.getElementById("confirmCancel");
+  const cancelCancel = document.getElementById("cancelCancel");
+
+  // Открытие модального окна для отмены
+  cancelButton.onclick = function () {
+    cancelModal.style.display = "flex";
+  };
+
+  // Открытие модального окна для успешной отмены
+  successButton.onclick = function () {
+    successModal.style.display = "flex";
+  };
+
+  // Закрытие модального окна для отмены
+  cancelClose.onclick = function () {
+    cancelModal.style.display = "none";
+  };
+
+  // Закрытие модального окна для успешной отмены
+  successClose.onclick = function () {
+    successModal.style.display = "none";
+  };
+
+  // Закрытие модального окна при клике вне его
+  window.onclick = function (event) {
+    if (event.target === cancelModal) {
+      cancelModal.style.display = "none";
+    }
+    if (event.target === successModal) {
+      successModal.style.display = "none";
+    }
+  };
+
+  // Подтверждение отмены
+  confirmCancel.onclick = function () {
+    // Здесь можно добавить логику для отмены записи
+    cancelModal.style.display = "none";
+    successModal.style.display = "flex"; // Показываем успешное сообщение
+  };
+});
