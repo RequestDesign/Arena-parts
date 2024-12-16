@@ -237,8 +237,8 @@
             <div class="main-content_main-content">
               <div class="main-link_content-block_text">ЛК мои заказы отменить</div>
               <div class="main-link_content-block">
-                <button class="main-link_content-block_title" id="cancelButton">Отменить запись?</button>
-                <button class="main-link_content-block_title" id="successButton">Запись успешно отменена!</button>
+                <button class="main-link_content-block_title" id="openCancelModal">Отменить запись?</button>
+                <button class="main-link_content-block_title" id="openSuccessModal">Запись успешно отменена!</button>
               </div>
             </div>
             <div class="main-content_main-content">
@@ -253,11 +253,9 @@
       </div>
       <div id="authModal" class="modal">
         <div class="modal-auth">
-          <span class="close-auth" id="closeAuthModal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           <div class="modal_title">Вход в личный кабинет</div>
           
           <form id="authForm" class="modal-content_block">
@@ -278,11 +276,9 @@
       </div>
       <div id="registerModal" class="modal">
           <div class="modal-register">
-              <span class="close-auth" id="closeRegisterModal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
+            <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
               <div class="modal_title">Регистрация на сайте</div>
               <form id="registerForm" class="modal-content_block">
                 <div class="form_modal-auth_content">
@@ -302,11 +298,9 @@
 
       <div id="changePasswordModal" class="modal">
         <div class="modal-change-password">
-          <span class="close-auth" id="closeChangePasswordModal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           <div class="modal_title">Изменить пароль</div>
             <form id="changePasswordForm" class="changePasswordForm">
               <div class="changePasswordForm-block">
@@ -324,11 +318,9 @@
       </div>
       <div id="passwordChangedModal" class="modal" > 
         <div class="modal-password-changed">
-          <span class="close-auth" id="closePasswordChangedModal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           <div class="modal-block">
             <div class="modal-title_image">
               <svg class="modal-title_image-svg" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -343,11 +335,9 @@
 
       <div id="cancelModal" class="modal">
         <div class="modal-cancelModal">
-          <span class="close-auth" id="cancelClose">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           <div class="modal_title">Вы действительно хотите отменить заказ?</div>
             <button id="confirmCancel" class="link-main">подвердить
               <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -359,11 +349,9 @@
       <!-- Модальное окно для успешной отмены -->
       <div id="successModal" class="modal">
         <div class="modal-successModal">
-          <span class="close-auth" id="successClose">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           <div class="modal-block">
             <div class="modal-title_image">
               <svg class="modal-title_image-svg" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -379,11 +367,9 @@
       <!-- Модальное окно "Найти автомобиль" -->
       <div id="findCarModal" class="modal">
         <div class="modal-findCarModal">
-          <span class="close-auth" id="closeFindCarModal">
-            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-          </span>
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
           <div class="modal_title">Добавление автомобиля в гараж</div>
           <div class="input-container">
             <svg class="sear-svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -403,11 +389,9 @@
       <!-- Модальное окно "Подтвердить добавление автомобиля" -->
       <div id="confirmAddCarModal" class="modal">
           <div class="modal-confirmAddCarModal">
-              <span class="close-auth" id="closeConfirmAddCarModal">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                </svg>
-              </span>
+            <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
               <div class="modal_title">Добавление автомобиля в гараж</div>
          
               <div class="car-image-container">
@@ -444,6 +428,7 @@
       margin-bottom: 12.604vw;
     }
     .dropdown-item {
+      width: auto;
       text-align: center;
       font-family: "Sansation";
       font-size: 2.625vw;

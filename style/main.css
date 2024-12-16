@@ -1119,6 +1119,9 @@ body {
   gap: 1.094vw;
 }
 .shopping-border {
+  display: grid;
+  align-items: center;
+  justify-content: center;
   width: 5.729vw;
   height: 5.729vw;
   padding: 1.563vw;
@@ -1638,7 +1641,7 @@ body {
   width: 33.333vw;
   height: 27.604vw;
   padding: 3.646vw 4.167vw;
-  border-radius: 16px;
+  border-radius: 0.833vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .modal-register {
@@ -1650,7 +1653,7 @@ body {
   width: 40vw;
   height: 30vw;
   padding: 4vw 5vw;
-  border-radius: 16px;
+  border-radius: 0.833vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .modal_title {
@@ -1677,7 +1680,6 @@ body {
   padding: 1.042vw;
   border-radius: 6px;
   border: 1px solid rgba(238, 242, 246, 1);
-  color: rgba(184, 184, 184, 1);
   font-family: "Sansation";
   font-size: 0.833vw;
   font-weight: 400;
@@ -1731,9 +1733,9 @@ body {
   top: 1.042vw;
   right: 1.198vw;
 }
-.close-svg {
-  width: 1.25vw;
-  height: 1.25vw;
+.close-btn_svg{
+  width: 2.25vw;
+  height: 2.25vw;
 }
 /* personalAccount */
 .main-personalAccount {
@@ -2091,6 +2093,9 @@ body {
   gap: 1.042vw;
 }
 .orders-circle {
+  display: grid;
+  align-items: center;
+  justify-content: center;
   width: 3.125vw;
   height: 3.125vw;
   color: rgba(18, 18, 18, 0.3);
@@ -3321,6 +3326,10 @@ body {
   .close-auth {
     top: 4vw;
     right: 3.733vw;
+  }
+  .close-btn_svg{
+    width: 6.4vw;
+    height: 6.4vw;
   }
   .openAuthModal {
     font-size: 3.733vw;

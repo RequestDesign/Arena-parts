@@ -352,8 +352,8 @@
                                     </button>
                                 </div>
                                 <div class="details-top_categories-btn">
-                                    <button class="catalog-btn"  onclick="toggleActive(this)">Мой автомобиль</button>
-                                    <button class="catalog-btn catalog-btn_active"  onclick="toggleActive(this)">Весь каталог</button>
+                                    <button class="catalog-btn" id="myCarBtn">Мой автомобиль</button>
+                                    <button class="catalog-btn catalog-btn_active" id="catalogBtn">Весь каталог</button>
                                 </div>
                             </div>
                             <div class="details-left_bottom">
@@ -493,8 +493,8 @@
                                 </div>
                                 
                                 <div class="details-top_categories-btn">
-                                    <button class="catalog-btn catalog-btn_active"  onclick="toggleActive(this)">Вид спереди</button>
-                                    <button class="catalog-btn"  onclick="toggleActive(this)">Вид сзади</button>
+                                    <button class="catalog-btn catalog-btn_active" id="frontViewBtn">Вид спереди</button>
+                                    <button class="catalog-btn" id="backViewBtn">Вид сзади</button>
                                 </div>
                             </div>
                         </div>
@@ -789,7 +789,7 @@
     </script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>
-    <script src="script/select.js"></script>
+    <!-- <script src="script/select.js"></script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
