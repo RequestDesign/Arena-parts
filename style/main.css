@@ -111,6 +111,25 @@ body {
   border: none;
   letter-spacing: 1px;
 }
+.link-main_contrary {
+  padding: 0.417vw 1.25vw 0.417vw 1.25vw;
+  border-radius: 100px;
+  font-family: "Rubik", sans-serif;
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(26, 95, 188, 1);
+  text-decoration: none;
+  background: none;
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 1px solid rgba(26, 95, 188, 1);
+}
 .arr-icon {
   background-color: white;
   width: 3.125vw;
@@ -950,6 +969,7 @@ body {
 .main-way_content {
   display: flex;
   align-items: center;
+  flex-wrap: wrap;
   gap: 0.313vw;
 }
 .way-content_title {
@@ -2789,11 +2809,186 @@ body {
     opacity: 0;
   }
 }
-.main-analog .product_content-bottom-filter{
+.main-analog .product_content-bottom-filter {
   max-height: 15vw;
 }
 .main-analog .product_content-bottom-filter.hiddenr {
   max-height: 3.242vw;
+}
+/* product */
+.main-productCard_content {
+  display: grid;
+  gap: 5.208vw;
+}
+.main-productCard_content-top {
+  display: flex;
+  justify-content: space-between;
+}
+.main-productCard_content-rigth {
+  display: grid;
+  gap: 2.031vw;
+  width: 48.906vw;
+  height: 36.302vw;
+  padding: 2.604vw 3.542vw 2.604vw 2.604vw;
+  border-radius: 0.833vw;
+  background: rgba(247, 250, 253, 1);
+}
+.main-productCard_content-rigth .link-main {
+  padding-right: 1.25vw;
+}
+.main-productCard_content-rigth_title {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  height: fit-content;
+}
+.productCard_content-rigth_block {
+  display: grid;
+  gap: 2.031vw;
+}
+.productCard_content-rigth_block-specifications {
+  display: grid;
+  gap: 1.771vw;
+}
+.productCard-specifications_title-bold {
+  height: fit-content;
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.productCard-specifications {
+  display: grid;
+  gap: 1.094vw;
+}
+.productCard-specifications_item {
+  display: flex;
+  justify-content: space-between;
+  width: 33.854vw;
+}
+.specifications-text_bold {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.specifications-text {
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.productCard-line {
+  border: 1px solid rgba(0, 0, 0, 0.06);
+  height: fit-content;
+}
+.productCard_content-box {
+  display: grid;
+  gap: 2.031vw;
+}
+.productCard_content-price {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.productCard_content-btn {
+  height: 2.917vw;
+  display: flex;
+  gap: 1.094vw;
+}
+.main-productCard_content-bottom {
+  display: grid;
+  gap: 3.125vw;
+}
+.productCard_content-bottom_btns {
+  display: flex;
+  gap: 1.094vw;
+}
+.product-bottom_block {
+  display: grid;
+  gap: 1.771vw;
+}
+.main-productCard_content-left_image {
+  display: grid;
+  gap: 1.771vw;
+  justify-items: center;
+}
+.main-product {
+  width: 32.083vw;
+  height: 11.823vw;
+  border-radius: 0.833vw;
+}
+.productCard-delivery {
+  display: grid;
+  gap: 1.771vw;
+}
+.productCard-delivery_block-title {
+  font-family: "Sansation";
+  font-size: 1.667vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.productCard-delivery_block {
+  display: flex;
+  align-items: center;
+  gap: 1.094vw;
+}
+.productCard-delivery_box {
+  width: 29.115vw;
+  display: grid;
+  gap: 1.094vw;
+}
+.productCard-delivery_box-text {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.product-image_border {
+  width: 8.229vw;
+  height: 4.948vw;
+  border-radius: 0.833vw;
+  border: 1px solid rgba(238, 242, 246, 1);
+  object-fit: contain;
+}
+.main-productCard_content-left{
+  display: grid;
+  gap: 6.51vw;
+}
+.product-main_block{
+  display: grid;
+  gap: 3.125vw;
+}
+.productCard-image_bottom{
+  display: flex;
+  gap: 0.521vw;
+}
+#manufacturer,#original_numbers{
+  display: none;
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -4068,31 +4263,112 @@ body {
     justify-items: center;
     gap: 13.333vw;
   }
-  .product_content-bottom-filter,.main-analog .product_content-bottom-filter {
+  .product_content-bottom-filter,
+  .main-analog .product_content-bottom-filter {
     gap: 8vw;
     width: 65.333vw;
     max-height: 138.533vw;
     padding: 5.333vw;
     border-radius: 4.267vw;
   }
-  .product_content-bottom-filter.hiddenr ,.main-analog .product_content-bottom-filter.hiddenr {
+  .product_content-bottom-filter.hiddenr,
+  .main-analog .product_content-bottom-filter.hiddenr {
     max-height: 15.333vw;
   }
-  .product_content-bottom-filter_block{
+  .product_content-bottom-filter_block {
     gap: 5.6vw;
   }
   .product_content-bottom_block {
     justify-content: space-between;
     gap: 2.667vw;
   }
-  .product_content-bottom-filter-title{
+  .product_content-bottom-filter-title {
     font-size: 3.733vw;
   }
-  .filter-title_svg{
+  .filter-title_svg {
     width: 5.333vw;
     height: 5.333vw;
   }
   .product_content-bottom-filter_block .personalAccount-content_left-data {
     font-size: 3.733vw;
   }
+  /* product */
+  .main-productCard_content-top{
+    display: grid;
+  }
+  .productCard-delivery{
+    display: none;
+  }
+  .main-product{
+    width: 94.27vw;
+    height: 32.533vw;
+  }
+  .productCard-image_bottom{
+    gap: 1.867vw;
+  }
+  .main-productCard_content-top{
+    gap: 5.333vw;
+  }
+  .product-image_border{
+    width: 28.267vw 4.8vw;
+    height: 17.333vw;
+    border-radius: 2.667vw;
+  }
+  .main-productCard_content-rigth{
+    padding: 5.333vw;
+    width: 94.27vw;
+    height: 100%;
+    gap: 4.267vw;
+  }
+  .main-productCard_content-rigth .link-main{
+    height: 8vw;
+  }
+  .productCard-specifications_item{
+    width: 100%;
+  }
+  .main-productCard_content-rigth_title{
+    font-size: 4.267vw;
+    height: fit-content;
+  }
+  .productCard_content-rigth_block-specifications{
+    gap: 5.333vw;
+  }
+  .productCard-specifications_title-bold,.specifications-text_bold{
+    font-size: 3.733vw;
+  }
+  .specifications-text{
+    font-size: 3.467vw;
+  }
+  .productCard_content-box{
+    display: flex ;
+    justify-content: space-between;
+  }
+  .productCard_content-price{
+    font-size: 4.267vw;
+  }
+  .productCard_content-btn{
+    display: grid;
+    gap: 1.333vw;
+  }
+  .productCard_content-rigth_block{
+    gap: 2.667vw;
+  }
+  .productCard-specifications{
+    gap: 4vw;
+  }
+  .link-main_contrary{
+    height: 8vw;
+    font-size: 3.2vw;
+  }
+  .productCard_content-btn{
+    height: fit-content;
+  }
+  .productCard_content-bottom_btns{
+    justify-content: space-between;
+  }
+  .main-productCard_content-bottom .original-top_item{
+    font-size: 3.2vw;
+    padding: 3.467vw 1.6vw;
+  }
+  
 }

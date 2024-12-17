@@ -26,7 +26,6 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
-  
   const swiperCategory = document.querySelector(".mySwiperCategory");
   if (swiperCategory) {
     var swiper = new Swiper(swiperCategory, {
@@ -48,14 +47,11 @@ document.addEventListener("DOMContentLoaded", () => {
         },
       },
     });
-    
   } else {
     console.log(
       "Элемент .mySwiperCategory не найден, Swiper не будет инициализирован."
     );
   }
-
-
 
   const buttons = document.querySelectorAll(".btn-search");
   const dropdowns = document.querySelectorAll(".dropdowns");
@@ -471,24 +467,23 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
 const filterTitle = document.querySelector(
   ".product_content-bottom-filter-title"
 );
-const filterBlock = document.querySelector(
-  ".product_content-bottom-filter"
-);
-
+const filterBlock = document.querySelector(".product_content-bottom-filter");
 if (filterTitle && filterBlock) {
   filterTitle.addEventListener("click", () => {
     filterBlock.classList.toggle("hiddenr");
   });
-
-  const buttons = filterBlock.querySelectorAll(".personalAccount-content_left-data");
+  const buttons = filterBlock.querySelectorAll(
+    ".personalAccount-content_left-data"
+  );
   if (buttons.length > 0) {
-    buttons.forEach(button => {
+    buttons.forEach((button) => {
       button.addEventListener("click", () => {
-        buttons.forEach(btn => btn.classList.remove("personalAccount-content_left-data_active"));
+        buttons.forEach((btn) =>
+          btn.classList.remove("personalAccount-content_left-data_active")
+        );
         button.classList.add("personalAccount-content_left-data_active");
       });
     });
@@ -502,4 +497,32 @@ if (filterTitle && filterBlock) {
   if (!filterBlock) {
     console.warn("Элемент блока фильтра не инициализирован.");
   }
+}
+
+
+const buttons = document.querySelectorAll(
+".productCard_content-bottom_btns button"
+);
+const contentBlocks = document.querySelectorAll(".product-main_block");
+if (buttons.length > 0 && contentBlocks.length > 0) {
+
+  buttons.forEach((button) => {
+    button.addEventListener("click", () => {
+      const targetId = button.getAttribute("data-target");
+
+      contentBlocks.forEach((block) => {
+        block.style.display = "none";
+      });
+      const targetBlock = document.getElementById(targetId);
+      if (targetBlock) {
+        targetBlock.style.display = "block";
+      }
+      buttons.forEach((btn) => {
+        btn.classList.remove("original-top_item-active");
+      });
+      button.classList.add("original-top_item-active");
+    });
+  });
+} else {
+  console.warn("Кнопки или контент-блоки не найдены на странице.");
 }
