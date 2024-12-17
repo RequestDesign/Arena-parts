@@ -248,6 +248,13 @@
                 <button class="main-link_content-block_title" id="openConfirmAddCarModal">Добавить автомобиль в гараж (подтвердить)</button>
               </div>
             </div>
+            <div class="main-content_main-content">
+              <div class="main-link_content-block_text">Оплата</div>
+              <div class="main-link_content-block">
+                <button class="main-link_content-block_title" id="openPaymentModal">Выберите способ оплаты</button>
+                <button class="main-link_content-block_title" id="openOrderSuccessModal">Ваш заказ успешно оформлен!</button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -412,6 +419,61 @@
       </div>
 
 
+      <div id="paymentModal" class="modal">
+        <div class="modal-paymentModal">
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="modal_title">Выберите способ оплаты</div>
+          <div class="payment-options">
+            <button class="payment-btn payment-btn_active" id="paymentOption1">
+              <img class="payment-btn_image" src="assets/images/basket/sbp.png" alt="">
+            </button>
+            <button class="payment-btn" id="paymentOption2">При получении</button>
+            <button class="payment-btn" id="paymentOption3">
+              <img class="payment-btn_image-yub" src="assets/images/basket/yub.png" alt="">
+            </button>
+          </div>
+          <div class="modal-paymentModal_block">
+            <div class="modal-paymentModal_block-title">Сумма заказа:</div>
+            <div class="modal-paymentModal_block-price">12 100.00₽</div>
+          </div>
+          <div class="additional-buttons">
+            <button id="option1" class="link-main hidden">получить QR-код
+              <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+            </button>
+            <button id="option2" class="link-main hidden">подтвердить
+              <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+            <button id="option3" class="link-main hidden">подтвердить
+              <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+      <div id="orderSuccessModal" class="modal">
+        <div class="modal-decorated">
+          <svg class="close-auth close-btn_svg" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M4 4L20 20M4 20L20 4" stroke="#121212" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <div class="modal-block">
+            <div class="modal-title_image">
+              <svg class="modal-title_image-svg" width="35" height="34" viewBox="0 0 35 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.4692 25.5001C14.2749 25.4995 14.0829 25.4589 13.905 25.3809C13.7271 25.303 13.5671 25.1892 13.435 25.0468L6.55002 17.7226C6.29265 17.4483 6.15478 17.0831 6.16673 16.7071C6.17869 16.3312 6.33949 15.9754 6.61377 15.718C6.88805 15.4607 7.25333 15.3228 7.62927 15.3347C8.0052 15.3467 8.36098 15.5075 8.61835 15.7818L14.455 22.0009L26.3692 8.96762C26.4901 8.81706 26.6405 8.6928 26.8112 8.60249C26.9819 8.51218 27.1692 8.45771 27.3617 8.44243C27.5542 8.42715 27.7478 8.45139 27.9305 8.51365C28.1133 8.57591 28.2815 8.67488 28.4246 8.80448C28.5677 8.93408 28.6829 9.09158 28.7629 9.2673C28.843 9.44302 28.8863 9.63325 28.8902 9.82631C28.894 10.0194 28.8584 10.2112 28.7854 10.39C28.7124 10.5687 28.6037 10.7307 28.4659 10.866L15.5175 25.0326C15.3867 25.1776 15.2273 25.294 15.0493 25.3745C14.8713 25.4549 14.6786 25.4977 14.4834 25.5001H14.4692Z" fill="#1A5FBC"/>
+              </svg>                           
+            </div>
+            <div class="modal_title">Ваш заказ успешно оформлен!</div>
+            <div class="modal-block_text">Ожидайте уведомления о поступлении Вашего заказа на пункт выдачи.</div>
+          </div>
+        </div>
+      </div>
+    
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="script/index.js"></script>

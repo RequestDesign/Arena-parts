@@ -78,31 +78,123 @@ document.addEventListener("DOMContentLoaded", () => {
     success: document.getElementById("successModal"),
     findCar: document.getElementById("findCarModal"),
     confirmAddCar: document.getElementById("confirmAddCarModal"),
+    payment: document.getElementById("paymentModal"),
+    orderSuccess: document.getElementById("orderSuccessModal"),
   };
-  
+
   function closeModals() {
     Object.values(modals).forEach((modal) => (modal.style.display = "none"));
   }
+
+  function openModal(modal) {
+    if (modals[modal]) {
+      closeModals();
+      modals[modal].style.display = "flex";
+    }
+  }
+  function showAdditionalButton(option) {
+    const allButtons = document.querySelectorAll(".additional-buttons button");
+    allButtons.forEach((button) => button.classList.add("hidden"));
+
+    const selectedButton = document.getElementById(option);
+    if (selectedButton) {
+      selectedButton.classList.remove("hidden");
+    }
+
+    const paymentButtons = document.querySelectorAll(".payment-btn");
+    paymentButtons.forEach((button) =>
+      button.classList.remove("payment-btn_active")
+    );
+
+    const currentButton = document.getElementById(
+      `paymentOption${option.charAt(option.length - 1)}`
+    );
+    if (currentButton) {
+      currentButton.classList.add("payment-btn_active");
+    }
+  }
+
   document.addEventListener("click", (event) => {
     const { target } = event;
-    if (target.id === "openAuthModal") modals.auth.style.display = "flex";
-    else if (target.id === "openRegisterModal") modals.register.style.display = "flex";
-    else if (target.id === "openChangePasswordModal") modals.changePassword.style.display = "flex";
-    else if (target.id === "openPasswordChangedModal") modals.passwordChanged.style.display = "flex";
-    else if (target.id === "openFindCarModal") modals.findCar.style.display = "flex";
-    else if (target.id === "openConfirmAddCarModal") modals.confirmAddCar.style.display = "flex"; 
-    else if (target.id === "openCancelModal") modals.cancel.style.display = "flex"; 
-    else if (target.id === "openSuccessModal") modals.success.style.display = "flex"; 
-  
+
+    switch (target.id) {
+      case "openAuthModal":
+        openModal("auth");
+        break;
+      case "openRegisterModal":
+        openModal("register");
+        break;
+      case "openChangePasswordModal":
+        openModal("changePassword");
+        break;
+      case "openPasswordChangedModal":
+        openModal("passwordChanged");
+        break;
+      case "openFindCarModal":
+        openModal("findCar");
+        break;
+      case "openConfirmAddCarModal":
+        openModal("confirmAddCar");
+        break;
+      case "openCancelModal":
+        openModal("cancel");
+        break;
+      case "openSuccessModal":
+        openModal("success");
+        break;
+      case "openPaymentModal":
+        openModal("payment");
+        break;
+      case "openOrderSuccessModal":
+        openModal("orderSuccess");
+        break;
+      default:
+        break;
+    }
+
     if (target.classList.contains("close-auth")) {
       closeModals();
     }
+
     if (Object.values(modals).includes(target)) {
       closeModals();
     }
   });
-  
-  
+
+  window.addEventListener("click", function (event) {
+    const paymentModal = modals.payment;
+    if (event.target === paymentModal) {
+      closeModals();
+    }
+  });
+
+  const closeAuthButton = document.querySelector(".close-auth");
+  if (closeAuthButton) {
+    closeAuthButton.addEventListener("click", closeModals);
+  }
+
+  const paymentModalContent = document.querySelector(
+    "#paymentModal .modal-content"
+  );
+  if (paymentModalContent) {
+    paymentModalContent.addEventListener("click", (event) => {
+      event.stopPropagation();
+    });
+  }
+
+  ["paymentOption1", "paymentOption2", "paymentOption3"].forEach(
+    (id, index) => {
+      const button = document.getElementById(id);
+      if (button) {
+        button.addEventListener("click", () =>
+          showAdditionalButton(`option${index + 1}`)
+        );
+      } else {
+        console.error(`Button with ID ${id} not found.`);
+      }
+    }
+  );
+  showAdditionalButton("option1");
 
   const counters = document.querySelectorAll(".orders-product_block-counter");
   counters.forEach((counter) => {

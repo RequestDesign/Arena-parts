@@ -1733,7 +1733,7 @@ body {
   top: 1.042vw;
   right: 1.198vw;
 }
-.close-btn_svg{
+.close-btn_svg {
   width: 2.25vw;
   height: 2.25vw;
 }
@@ -2017,7 +2017,7 @@ body {
   align-items: center;
   gap: 0.417vw;
   color: rgba(26, 95, 188, 1);
-  font-family: Sansation;
+  font-family: "Sansation";
   font-size: 0.938vw;
   font-weight: 700;
   line-height: normal;
@@ -2028,7 +2028,109 @@ body {
 .cancel-text_expired {
   color: rgba(105, 110, 118, 1);
 }
-
+/* modal-paymentModal */
+.modal-paymentModal {
+  display: grid;
+  gap: 2.344vw;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  /* transition: all 0.3s ease; */
+  width: 35.052vw;
+  height: 25.521vw;
+  padding: 3.646vw 4.167vw;
+  border-radius: 0.833vw;
+}
+.hidden {
+  display: none;
+}
+.modal-paymentModal_block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.771vw;
+  height: fit-content;
+}
+.payment-options {
+  display: flex;
+  justify-content: center;
+  gap: 1.094vw;
+}
+.payment-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 5.208vw;
+  height: 4.688vw;
+  border: 1px solid rgba(216, 224, 233, 1);
+  background: none;
+  border-radius: 0.833vw;
+  padding: 1.146vw 0.521vw;
+  font-family: "Sansation";
+  font-size: 0.729vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.payment-btn_image {
+  width: 3.542vw;
+}
+.payment-btn_image-yub {
+  width: 4.167vw;
+}
+.modal-paymentModal_block-title {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.modal-paymentModal_block-price {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.additional-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.payment-btn_active {
+  border: 1px solid rgba(26, 95, 188, 1);
+}
+.modal-block_text {
+  font-family: "Sansation";
+  font-size: 0.938vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(105, 110, 118, 1);
+}
+.modal-decorated {
+  display: grid;
+  gap: 2.344vw;
+  position: relative;
+  margin: auto;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  width: 5.208vw;
+  height: 21.563vw;
+  min-width: 31.25vw;
+  padding: 3.646vw 4.167vw;
+  border-radius: 0.833vw;
+}
 /* Orders */
 .personalAccountOrders-content_top {
   display: grid;
@@ -3327,7 +3429,7 @@ body {
     top: 4vw;
     right: 3.733vw;
   }
-  .close-btn_svg{
+  .close-btn_svg {
     width: 6.4vw;
     height: 6.4vw;
   }
@@ -3588,53 +3690,53 @@ body {
     height: auto;
     padding: 2.133vw 3.2vw;
   }
-  .basket-container_main-line{
+  .basket-container_main-line {
     display: none;
   }
-  .basket-container_main-data_title-circle{
+  .basket-container_main-data_title-circle {
     display: none;
   }
-  .basket-container_main-data_block{
+  .basket-container_main-data_block {
     margin-top: 5.333vw;
     margin-left: 0;
     gap: 8vw;
   }
-  .basket-container_main-data_title{
+  .basket-container_main-data_title {
     font-size: 4.267vw;
   }
-  .basket-block_input{
+  .basket-block_input {
     gap: 2.667vw;
   }
-  .decoration-input{
+  .decoration-input {
     width: 100%;
     height: 10.667vw;
     font-size: 3.467vw;
   }
-  .basket-container_block-input_title{
+  .basket-container_block-input_title {
     font-size: 3.733vw;
   }
-  .decoration-input_block{
+  .decoration-input_block {
     width: 100%;
     height: 10.667vw;
     font-size: 3.467vw;
   }
-  .decoration-input_now{
+  .decoration-input_now {
     width: 100%;
     height: 10.667vw;
     font-size: 3.467vw;
   }
-  .comment{
+  .comment {
     width: 100%;
     height: 10.667vw;
     font-size: 3.467vw;
   }
-  .basket-container_radio{
+  .basket-container_radio {
     gap: 2.667vw;
   }
-  .basket-radio_text{
+  .basket-radio_text {
     font-size: 3.467vw;
   }
-  .basket-radio[type="radio"]{
+  .basket-radio[type="radio"] {
     width: 5.867vw;
     height: 5.867vw;
   }
@@ -3719,10 +3821,51 @@ body {
   .modal-confirmAddCarModal {
     width: 88vw;
     height: 75.733vw;
-    border-radius: 16px;
+    border-radius: 4.267vw;
     padding: 8.8vw 9.867vw;
   }
   .car-title {
     font-size: 3.467vw;
+  }
+  /* modal-paymentModal */
+  .modal-paymentModal {
+    gap: 5.333vw;
+    width: 88vw;
+    height: 72vw;
+    padding: 8vw 2.667vw 5.333vw 2.667vw;
+    border-radius: 4.267vw;
+  }
+  .modal-paymentModal_block-title {
+    font-size: 3.733vw;
+  }
+  .modal-paymentModal_block-price {
+    font-size: 5.333vw;
+  }
+  .payment-btn {
+    width: 26.667vw;
+    height: 24vw;
+    border-radius: 4.267vw;
+    font-size: 3.733vw;
+  }
+  .payment-btn_image {
+    width: 16.133vw;
+    height: 10.533vw;
+  }
+  .payment-btn_image-yub {
+    width: 20.333vw;
+    height: 4.033vw;
+  }
+  /* modal-decorated */
+  .modal-decorated {
+    width: 88vw;
+    height: 74.4vw;
+    border-radius: 4.267vw;
+    padding: 11.2vw 4.533vw 7.2vw 4.533vw;
+  }
+  .modal-block_text{
+    font-size: 3.733vw;
+  }
+  #orderSuccessModal .modal-block{
+    gap: 8vw;
   }
 }
