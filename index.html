@@ -442,7 +442,7 @@
             <button id="option1" class="link-main hidden">получить QR-код
               <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1.5 15.0571L8.5 8.05713L1.5 1.05713" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+              </svg>
             </button>
             <button id="option2" class="link-main hidden">подтвердить
               <svg class="arr-icon" width="10" height="17" viewBox="0 0 10 17" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -455,6 +455,15 @@
               </svg>
             </button>
           </div>
+          <div id="qrCodeBlock" class="qr-code hidden">
+            <div class="qrCodeBlock-text">Ваш QR-код для оплаты готов:</div>
+            <div class="qrcode-image-url_block">
+              <img class="qrcode-image-url" src="your-qrcode-image-url.png" alt="QR Code" />
+            </div>
+            <button id="backButton" class="qrCodeBlock-link_main">К предыдущему шагу</button>
+
+            
+        </div>
         </div>
       </div>
       <div id="orderSuccessModal" class="modal">
@@ -473,6 +482,8 @@
           </div>
         </div>
       </div>
+      
+
     
     </main>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>

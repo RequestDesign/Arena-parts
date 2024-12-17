@@ -68,7 +68,6 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-
   const modals = {
     auth: document.getElementById("authModal"),
     register: document.getElementById("registerModal"),
@@ -92,6 +91,7 @@ document.addEventListener("DOMContentLoaded", () => {
       modals[modal].style.display = "flex";
     }
   }
+
   function showAdditionalButton(option) {
     const allButtons = document.querySelectorAll(".additional-buttons button");
     allButtons.forEach((button) => button.classList.add("hidden"));
@@ -113,6 +113,54 @@ document.addEventListener("DOMContentLoaded", () => {
       currentButton.classList.add("payment-btn_active");
     }
   }
+
+  // Обработчики событий для кнопок выбора способа оплаты
+  ["paymentOption1", "paymentOption2", "paymentOption3"].forEach(
+    (id, index) => {
+      const button = document.getElementById(id);
+      if (button) {
+        button.addEventListener("click", () => {
+          // Закрыть блок с QR-кодом, если он открыт
+          const qrCodeBlock = document.getElementById("qrCodeBlock");
+          qrCodeBlock.classList.add("hidden"); // Скрыть блок с QR-кодом
+
+          // Показать кнопку "получить QR-код"
+          const optionButton = document.getElementById(`option${index + 1}`);
+          if (optionButton) {
+            optionButton.classList.remove("hidden");
+          }
+
+          showAdditionalButton(`option${index + 1}`);
+        });
+      } else {
+        console.error(`Button with ID ${id} not found.`);
+      }
+    }
+  );
+
+  // Обработчик для кнопки "получить QR-код"
+  document.getElementById("option1").addEventListener("click", () => {
+    const qrCodeBlock = document.getElementById("qrCodeBlock");
+    qrCodeBlock.classList.remove("hidden"); // Показываем блок с QR-кодом
+
+    // Скрыть кнопку "получить QR-код"
+    const optionButton = document.getElementById("option1");
+    if (optionButton) {
+      optionButton.classList.add("hidden");
+    }
+  });
+
+  // Обработчик для кнопки "К предыдущему шагу"
+  document.getElementById("backButton").addEventListener("click", () => {
+    const qrCodeBlock = document.getElementById("qrCodeBlock");
+    qrCodeBlock.classList.add("hidden"); // Скрыть блок с QR-кодом
+
+    // Показать кнопку "получить QR-код"
+    const optionButton = document.getElementById("option1");
+    if (optionButton) {
+      optionButton.classList.remove("hidden");
+    }
+  });
 
   document.addEventListener("click", (event) => {
     const { target } = event;
@@ -182,19 +230,10 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  ["paymentOption1", "paymentOption2", "paymentOption3"].forEach(
-    (id, index) => {
-      const button = document.getElementById(id);
-      if (button) {
-        button.addEventListener("click", () =>
-          showAdditionalButton(`option${index + 1}`)
-        );
-      } else {
-        console.error(`Button with ID ${id} not found.`);
-      }
-    }
-  );
+  // Изначально показываем первую кнопку
   showAdditionalButton("option1");
+
+  
 
   const counters = document.querySelectorAll(".orders-product_block-counter");
   counters.forEach((counter) => {
