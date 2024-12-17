@@ -515,7 +515,7 @@ if (buttons.length > 0 && contentBlocks.length > 0) {
       });
       const targetBlock = document.getElementById(targetId);
       if (targetBlock) {
-        targetBlock.style.display = "block";
+        targetBlock.style.display = "grid";
       }
       buttons.forEach((btn) => {
         btn.classList.remove("original-top_item-active");

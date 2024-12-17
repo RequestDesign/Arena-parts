@@ -2739,7 +2739,7 @@ body {
 }
 .original-top_item-active {
   border: 1px solid rgba(26, 95, 188, 1);
-  font-weight: 700;
+  font-weight: 500;
 }
 .swiper-btn {
   display: flex;
@@ -4310,7 +4310,7 @@ body {
     gap: 5.333vw;
   }
   .product-image_border{
-    width: 28.267vw 4.8vw;
+    width: 28.267vw;
     height: 17.333vw;
     border-radius: 2.667vw;
   }
