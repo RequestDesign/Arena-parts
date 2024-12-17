@@ -19,7 +19,7 @@
 }
 #catalog-menu {
   position: absolute;
-  top: 10.581vh;
+  top: 6.581vw;
   left: 0;
   width: 100%;
   /* height: ; */
@@ -351,5 +351,10 @@
   }
   .header-modal_visil{
     display: flex;
+  }
+}
+@media (max-width: 375px) {
+  #catalog-menu {
+    top: 13.4vw;
   }
 }
