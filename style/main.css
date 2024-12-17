@@ -2789,6 +2789,12 @@ body {
     opacity: 0;
   }
 }
+.main-analog .product_content-bottom-filter{
+  max-height: 15vw;
+}
+.main-analog .product_content-bottom-filter.hiddenr {
+  max-height: 3.242vw;
+}
 @media (max-width: 48em) {
   .container-fluid {
     margin: 0;
@@ -4062,14 +4068,14 @@ body {
     justify-items: center;
     gap: 13.333vw;
   }
-  .product_content-bottom-filter {
+  .product_content-bottom-filter,.main-analog .product_content-bottom-filter {
     gap: 8vw;
     width: 65.333vw;
     max-height: 138.533vw;
     padding: 5.333vw;
     border-radius: 4.267vw;
   }
-  .product_content-bottom-filter.hiddenr {
+  .product_content-bottom-filter.hiddenr ,.main-analog .product_content-bottom-filter.hiddenr {
     max-height: 15.333vw;
   }
   .product_content-bottom-filter_block{
