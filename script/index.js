@@ -26,6 +26,7 @@ document.addEventListener("DOMContentLoaded", () => {
     );
   }
 
+  
   const swiperCategory = document.querySelector(".mySwiperCategory");
   if (swiperCategory) {
     var swiper = new Swiper(swiperCategory, {
@@ -39,27 +40,15 @@ document.addEventListener("DOMContentLoaded", () => {
       breakpoints: {
         769: {
           slidesPerView: "auto",
-          spaceBetween: 13,
+          spaceBetween: 21,
         },
         0: {
           slidesPerView: "auto",
-          spaceBetween: 10,
+          spaceBetween: 9,
         },
       },
     });
-
-    // Add event listeners to buttons after Swiper is initialized
-    const buttons = swiperCategory.querySelectorAll(".original-top_item");
-    buttons.forEach((button) => {
-      button.addEventListener("click", () => {
-        // Remove the active class from all buttons
-        buttons.forEach((btn) => {
-          btn.classList.remove("original-top_item-active");
-        });
-        // Add the active class to the clicked button
-        button.classList.add("original-top_item-active");
-      });
-    });
+    
   } else {
     console.log(
       "Элемент .mySwiperCategory не найден, Swiper не будет инициализирован."
@@ -94,8 +83,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.log("Кнопки или дропдауны не инициализированы.");
   }
-
-
 
   // Catalog Menu
   const catalogButton = document.getElementById("catalogButton");
@@ -134,8 +121,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     console.log("Кнопки закрытия не инициализирована.");
   }
-
-
 
   const modals = {
     auth: document.getElementById("authModal"),
@@ -307,8 +292,6 @@ document.addEventListener("DOMContentLoaded", () => {
   });
   showAdditionalButton("option1");
 
-
-
   const uploadButton = document.getElementById("uploadButton");
   if (uploadButton) {
     uploadButton.addEventListener("click", () => {
@@ -320,8 +303,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     //  не инициализирована.
   }
-
-
 
   const fileInput = document.getElementById("fileInput");
   if (fileInput) {
@@ -341,8 +322,6 @@ document.addEventListener("DOMContentLoaded", () => {
   } else {
     //  не инициализирована.
   }
-
-
 
   const counters = document.querySelectorAll(".orders-product_block-counter");
   counters.forEach((counter) => {
@@ -378,8 +357,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
-
   document.querySelectorAll(".details-top_categories-btn").forEach((group) => {
     const buttonsCatalog = group.querySelectorAll(".catalog-btn");
 
@@ -398,8 +375,6 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   }
-
-
 
   const customSelects = document.querySelectorAll(".custom-select");
   customSelects.forEach((select) => {
@@ -438,8 +413,6 @@ document.addEventListener("DOMContentLoaded", () => {
     `;
   }
 
-
-  
   ymaps.ready(function () {
     var mapElement = document.getElementById("map");
     if (mapElement) {
@@ -496,3 +469,37 @@ document.addEventListener("DOMContentLoaded", () => {
     myPlacemark.events.add("dragend", updateAddressPosition);
   }
 });
+
+
+
+const filterTitle = document.querySelector(
+  ".product_content-bottom-filter-title"
+);
+const filterBlock = document.querySelector(
+  ".product_content-bottom-filter"
+);
+
+if (filterTitle && filterBlock) {
+  filterTitle.addEventListener("click", () => {
+    filterBlock.classList.toggle("hiddenr");
+  });
+
+  const buttons = filterBlock.querySelectorAll(".personalAccount-content_left-data");
+  if (buttons.length > 0) {
+    buttons.forEach(button => {
+      button.addEventListener("click", () => {
+        buttons.forEach(btn => btn.classList.remove("personalAccount-content_left-data_active"));
+        button.classList.add("personalAccount-content_left-data_active");
+      });
+    });
+  } else {
+    console.warn("Кнопки не найдены внутри блока фильтра.");
+  }
+} else {
+  if (!filterTitle) {
+    console.warn("Элемент заголовка фильтра не инициализирован.");
+  }
+  if (!filterBlock) {
+    console.warn("Элемент блока фильтра не инициализирован.");
+  }
+}

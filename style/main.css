@@ -1783,7 +1783,7 @@ body {
   color: rgba(19, 27, 55, 1);
 }
 .personalAccount-content_line {
-  border: 1px solid rgba(0, 0, 0, 0.06);
+  border: 0.052vw solid rgba(0, 0, 0, 0.06);
   height: fit-content;
 }
 .personalAccount-content_left-data_active {
@@ -2710,12 +2710,11 @@ body {
   text-decoration: none;
   font-family: "Sansation";
   font-size: 1.042vw;
-  font-weight: 400;
+  font-weight: 500;
   line-height: normal;
   text-align: center;
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
-
   color: rgba(18, 18, 18, 1);
 }
 .original-top_item-active {
@@ -2735,6 +2734,60 @@ body {
   right: 0;
   top: 0.46vw;
   z-index: 1;
+}
+/* original-product_content-bottom */
+.original-product_content-bottom {
+  display: flex;
+  gap: 2.083vw;
+}
+.original-top_item-text {
+  padding: 0 20px;
+}
+.product_content-bottom-filter {
+  display: grid;
+  gap: 1.563vw;
+  width: 10.26vw;
+  max-height: 29vw;
+  padding: 1.042vw;
+  border-radius: 0.833vw;
+  background: rgba(238, 241, 244, 1);
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  overflow: hidden;
+}
+.product_content-bottom-filter_block {
+  display: grid;
+  gap: 1.094vw;
+  transition: opacity 0.3s ease;
+}
+.product_content-bottom-filter_block .personalAccount-content_left-data {
+  font-size: 0.833vw;
+}
+.product_content-bottom-filter-title {
+  display: flex;
+  justify-content: space-between;
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  cursor: pointer;
+}
+.filter-title_svg {
+  width: 1.042vw;
+  height: 1.042vw;
+}
+.product_content-bottom_block {
+  display: flex;
+  gap: 1.094vw;
+  flex-wrap: wrap;
+}
+.product_content-bottom-filter.hiddenr {
+  max-height: 3.242vw;
+  .product_content-bottom-filter_block {
+    opacity: 0;
+  }
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -4002,5 +4055,38 @@ body {
     width: 8.533vw;
     height: 8.533vw;
     top: 1.133vw;
+  }
+  /* original-product_content-bottom */
+  .original-product_content-bottom {
+    display: grid;
+    justify-items: center;
+    gap: 13.333vw;
+  }
+  .product_content-bottom-filter {
+    gap: 8vw;
+    width: 65.333vw;
+    max-height: 138.533vw;
+    padding: 5.333vw;
+    border-radius: 4.267vw;
+  }
+  .product_content-bottom-filter.hiddenr {
+    max-height: 15.333vw;
+  }
+  .product_content-bottom-filter_block{
+    gap: 5.6vw;
+  }
+  .product_content-bottom_block {
+    justify-content: space-between;
+    gap: 2.667vw;
+  }
+  .product_content-bottom-filter-title{
+    font-size: 3.733vw;
+  }
+  .filter-title_svg{
+    width: 5.333vw;
+    height: 5.333vw;
+  }
+  .product_content-bottom-filter_block .personalAccount-content_left-data {
+    font-size: 3.733vw;
   }
 }
