@@ -3030,11 +3030,73 @@ body {
   text-underline-position: from-font;
   text-decoration-skip-ink: none;
   width: 29.948vw;
+  text-transform: uppercase;
 }
 .refunds-item_text-p {
   font-family: Sansation;
   font-size: 0.833vw;
   font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(114, 114, 114, 1);
+}
+/* refunds_content-top_text */
+.refunds_content-top {
+  display: grid;
+  gap: 2.656vw;
+}
+.refunds_content-top_text {
+  width: 100%;
+  background: rgba(238, 242, 246, 1);
+  padding: 1.563vw;
+  border-radius: 0.833vw;
+}
+.main-privacy_content-item_block {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.main-privacy_content-item {
+  margin-top: 3.125vw;
+  padding-bottom: 2.083vw;
+  display: grid;
+  gap: 2.083vw;
+  border-bottom: 1px solid rgba(184, 184, 184, 1);
+}
+.refunds_content-bottom {
+  display: grid;
+  gap: 1.563vw;
+}
+.refunds_content-bottom_title {
+  font-family: "Sansation";
+  font-size: 1.042vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.refunds_content-text_bold {
+  font-family: "Sansation";
+  font-size: 0.833vw;
+  font-weight: 700;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  text-transform: uppercase;
+  color: rgba(43, 45, 50, 1);
+}
+.refunds_content-bottom_text-gruy {
+  font-family: "Sansation";
+  font-size: 0.521vw;
+  font-weight: 700;
   line-height: normal;
   text-align: left;
   text-underline-position: from-font;
@@ -4423,24 +4485,57 @@ body {
     padding: 3.467vw 1.6vw;
   }
   /* .refunds */
-  .refunds_content-top_title{
+  .refunds_content-top_title {
     font-size: 4.267vw;
   }
-  .main-refunds_content-item{
+  .main-refunds_content-item {
     margin-top: 8vw;
     padding-bottom: 8vw;
   }
-  .main-refunds_content-item_block{
-    width: auto;
+  .main-refunds_content-item_block {
+    width: 25.533vw;
     font-size: 3.467vw;
   }
-  .modal-problem{
+  .modal-problem {
     width: 36.533vw;
   }
-  .main-refunds_content-item_text{
+  .main-refunds_content-item_text {
     width: 53.067vw;
   }
-  .refunds-item_text-p{
+  .refunds-item_text-p {
     font-size: 2.933vw;
+  }
+  .main-refunds_content {
+    gap: 5.333vw;
+  }
+  .main-privacy_content-item_block {
+    font-size: 3.467vw;
+  }
+  .main-privacy_content-item {
+    margin-top: 8vw;
+    padding-bottom: 8vw;
+  }
+  .refunds_content-bottom {
+    gap: 8vw;
+    margin-bottom: 8vw;
+  }
+  .refunds_content-bottom_title {
+    font-size: 3.2vw;
+  }
+  .refunds_content-text_bold {
+    font-size: 2.933vw;
+  }
+  .refunds_content-top_text {
+    display: grid;
+    gap: 2.667vw;
+  }
+  .refunds_content-top {
+    gap: 5.333vw;
+  }
+  .main-refunds {
+    margin: 9.6vw 0  26.667vw 0;
+  }
+  .refunds_content-bottom_text-gruy{
+    font-size: 2.667vw;
   }
 }
