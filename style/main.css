@@ -2975,20 +2975,71 @@ body {
   border: 1px solid rgba(238, 242, 246, 1);
   object-fit: contain;
 }
-.main-productCard_content-left{
+.main-productCard_content-left {
   display: grid;
   gap: 6.51vw;
 }
-.product-main_block{
+.product-main_block {
   display: grid;
   gap: 3.125vw;
 }
-.productCard-image_bottom{
+.productCard-image_bottom {
   display: flex;
   gap: 0.521vw;
 }
-#manufacturer,#original_numbers{
+#manufacturer,
+#original_numbers {
   display: none;
+}
+/* refunds */
+.main-refunds {
+  margin: 4.167vw 0 9.375vw 0;
+}
+.main-refunds_content {
+  display: grid;
+  gap: 4.167vw;
+}
+.main-refunds_content-item {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3.125vw;
+  padding-bottom: 2.083vw;
+  border-bottom: 1px solid rgba(184, 184, 184, 1);
+}
+.main-refunds_content-item_text {
+  width: 53.646vw;
+}
+.refunds_content-top_title {
+  font-family: "Sansation";
+  font-size: 3.125vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+.refunds_content-main {
+  border-top: 1px solid rgba(184, 184, 184, 1);
+}
+.main-refunds_content-item_block {
+  font-family: "Sansation";
+  font-size: 2.188vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  width: 29.948vw;
+}
+.refunds-item_text-p {
+  font-family: Sansation;
+  font-size: 0.833vw;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+  color: rgba(114, 114, 114, 1);
 }
 @media (max-width: 48em) {
   .container-fluid {
@@ -4293,82 +4344,103 @@ body {
     font-size: 3.733vw;
   }
   /* product */
-  .main-productCard_content-top{
+  .main-productCard_content-top {
     display: grid;
   }
-  .productCard-delivery{
+  .productCard-delivery {
     display: none;
   }
-  .main-product{
+  .main-product {
     width: 94.27vw;
     height: 32.533vw;
   }
-  .productCard-image_bottom{
+  .productCard-image_bottom {
     gap: 1.867vw;
   }
-  .main-productCard_content-top{
+  .main-productCard_content-top {
     gap: 5.333vw;
   }
-  .product-image_border{
+  .product-image_border {
     width: 28.267vw;
     height: 17.333vw;
     border-radius: 2.667vw;
   }
-  .main-productCard_content-rigth{
+  .main-productCard_content-rigth {
     padding: 5.333vw;
     width: 94.27vw;
     height: 100%;
     gap: 4.267vw;
   }
-  .main-productCard_content-rigth .link-main{
+  .main-productCard_content-rigth .link-main {
     height: 8vw;
   }
-  .productCard-specifications_item{
+  .productCard-specifications_item {
     width: 100%;
   }
-  .main-productCard_content-rigth_title{
+  .main-productCard_content-rigth_title {
     font-size: 4.267vw;
     height: fit-content;
   }
-  .productCard_content-rigth_block-specifications{
+  .productCard_content-rigth_block-specifications {
     gap: 5.333vw;
   }
-  .productCard-specifications_title-bold,.specifications-text_bold{
+  .productCard-specifications_title-bold,
+  .specifications-text_bold {
     font-size: 3.733vw;
   }
-  .specifications-text{
+  .specifications-text {
     font-size: 3.467vw;
   }
-  .productCard_content-box{
-    display: flex ;
+  .productCard_content-box {
+    display: flex;
     justify-content: space-between;
   }
-  .productCard_content-price{
+  .productCard_content-price {
     font-size: 4.267vw;
   }
-  .productCard_content-btn{
+  .productCard_content-btn {
     display: grid;
     gap: 1.333vw;
   }
-  .productCard_content-rigth_block{
+  .productCard_content-rigth_block {
     gap: 2.667vw;
   }
-  .productCard-specifications{
+  .productCard-specifications {
     gap: 4vw;
   }
-  .link-main_contrary{
+  .link-main_contrary {
     height: 8vw;
     font-size: 3.2vw;
   }
-  .productCard_content-btn{
+  .productCard_content-btn {
     height: fit-content;
   }
-  .productCard_content-bottom_btns{
+  .productCard_content-bottom_btns {
     justify-content: space-between;
   }
-  .main-productCard_content-bottom .original-top_item{
+  .main-productCard_content-bottom .original-top_item {
     font-size: 3.2vw;
     padding: 3.467vw 1.6vw;
   }
-  
+  /* .refunds */
+  .refunds_content-top_title{
+    font-size: 4.267vw;
+  }
+  .main-refunds_content-item{
+    margin-top: 8vw;
+    padding-bottom: 8vw;
+  }
+  .main-refunds_content-item_block{
+    width: auto;
+    font-size: 3.467vw;
+  }
+  .modal-problem{
+    width: 36.533vw;
+  }
+  .main-refunds_content-item_text{
+    width: 53.067vw;
+  }
+  .refunds-item_text-p{
+    font-size: 2.933vw;
+  }
 }
