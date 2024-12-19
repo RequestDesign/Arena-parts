@@ -88,7 +88,7 @@ document.addEventListener("DOMContentLoaded", () => {
   let isCatalogOpen = false;
 
   function updateIcon(isOpen) {
-    const isSmallScreen = window.matchMedia("(max-width: 48em)").matches;
+    const isSmallScreen = window.matchMedia("(width: 48em)").matches;
     catalogIcon.innerHTML = isSmallScreen
       ? isOpen
         ? '<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 6L18 18M6 18L18 6" stroke="#1A5FBC" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>'
@@ -372,53 +372,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  const customSelects = document.querySelectorAll(".custom-select");
-  customSelects.forEach((select) => {
-    const selectedOption = select.querySelector(".view-block_select");
-    const selectItems = select.querySelector(".select-items");
-
-    if (selectedOption && selectItems) {
-      selectedOption.addEventListener("click", () => {
-        selectItems.classList.toggle("select-show");
-      });
-
-      window.addEventListener("click", (event) => {
-        if (!select.contains(event.target)) {
-          selectItems.classList.remove("select-show");
-        }
-      });
-    } else {
-    }
-  });
-  window.selectOption = function (item, selectedId) {
-    const selectedOption = document.getElementById(selectedId);
-    if (selectedOption) {
-      selectedOption.innerHTML = `${item.innerHTML} ${getSVGIcon()}`;
-      const selectItems = item.closest(".select-items");
-      if (selectItems) {
-        selectItems.classList.remove("select-show");
+  try {
+    ymaps.ready(function () {
+      var mapElement = document.getElementById("map");
+      if (mapElement) {
+        init();
+      } else {
+        console.log(
+          "Элемент с ID 'map' не найден. Карта не будет инициализирована."
+        );
       }
-    } else {
-    }
-  };
-  function getSVGIcon() {
-    return `
-      <svg class="select-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
-      </svg>
-    `;
+    });
+  } catch (error) {
+    console.error(
+      "Ошибка: ymaps не определен. Убедитесь, что библиотека Yandex Maps загружена.",
+      error
+    );
   }
-
-  ymaps.ready(function () {
-    var mapElement = document.getElementById("map");
-    if (mapElement) {
-      init();
-    } else {
-      console.log(
-        "Элемент с ID 'map' не найден. Карта не будет инициализирована."
-      );
-    }
-  });
 
   function init() {
     var myMap = new ymaps.Map("map", {
@@ -464,65 +434,135 @@ document.addEventListener("DOMContentLoaded", () => {
     myPlacemark.events.add("drag", updateAddressPosition);
     myPlacemark.events.add("dragend", updateAddressPosition);
   }
-});
 
-
-const filterTitle = document.querySelector(
-  ".product_content-bottom-filter-title"
-);
-const filterBlock = document.querySelector(".product_content-bottom-filter");
-if (filterTitle && filterBlock) {
-  filterTitle.addEventListener("click", () => {
-    filterBlock.classList.toggle("hiddenr");
-  });
-  const buttons = filterBlock.querySelectorAll(
-    ".personalAccount-content_left-data"
+  const filterTitle = document.querySelector(
+    ".product_content-bottom-filter-title"
   );
-  if (buttons.length > 0) {
-    buttons.forEach((button) => {
+  const filterBlock = document.querySelector(".product_content-bottom-filter");
+  if (filterTitle && filterBlock) {
+    filterTitle.addEventListener("click", () => {
+      filterBlock.classList.toggle("hiddenr");
+    });
+    const buttons = filterBlock.querySelectorAll(
+      ".personalAccount-content_left-data"
+    );
+    if (buttons.length > 0) {
+      buttons.forEach((button) => {
+        button.addEventListener("click", () => {
+          buttons.forEach((btn) =>
+            btn.classList.remove("personalAccount-content_left-data_active")
+          );
+          button.classList.add("personalAccount-content_left-data_active");
+        });
+      });
+    } else {
+      console.warn("Кнопки не найдены внутри блока фильтра.");
+    }
+  } else {
+    if (!filterTitle) {
+      console.warn("Элемент заголовка фильтра не инициализирован.");
+    }
+    if (!filterBlock) {
+      console.warn("Элемент блока фильтра не инициализирован.");
+    }
+  }
+
+  const buttonsProduct = document.querySelectorAll(
+    ".productCard_content-bottom_btns button"
+  );
+  const contentBlocks = document.querySelectorAll(".product-main_block");
+  if (buttonsProduct.length > 0 && contentBlocks.length > 0) {
+    buttonsProduct.forEach((button) => {
       button.addEventListener("click", () => {
-        buttons.forEach((btn) =>
-          btn.classList.remove("personalAccount-content_left-data_active")
-        );
-        button.classList.add("personalAccount-content_left-data_active");
+        const targetId = button.getAttribute("data-target");
+
+        contentBlocks.forEach((block) => {
+          block.style.display = "none";
+        });
+        const targetBlock = document.getElementById(targetId);
+        if (targetBlock) {
+          targetBlock.style.display = "grid";
+        }
+        buttonsProduct.forEach((btn) => {
+          btn.classList.remove("original-top_item-active");
+        });
+        button.classList.add("original-top_item-active");
       });
     });
   } else {
-    console.warn("Кнопки не найдены внутри блока фильтра.");
+    console.warn("Кнопки или контент-блоки не найдены на странице.");
   }
-} else {
-  if (!filterTitle) {
-    console.warn("Элемент заголовка фильтра не инициализирован.");
-  }
-  if (!filterBlock) {
-    console.warn("Элемент блока фильтра не инициализирован.");
-  }
-}
 
 
-const buttons = document.querySelectorAll(
-".productCard_content-bottom_btns button"
-);
-const contentBlocks = document.querySelectorAll(".product-main_block");
-if (buttons.length > 0 && contentBlocks.length > 0) {
+  const customSelectsBtn = document.querySelectorAll(".custom-select_btn");
+  if (customSelectsBtn.length === 0) return; 
 
-  buttons.forEach((button) => {
-    button.addEventListener("click", () => {
-      const targetId = button.getAttribute("data-target");
+  window.selectOption = function (element, selectedId) {
+    const selectedValue = element.textContent;
+    document.getElementById(selectedId).textContent = selectedValue;
 
-      contentBlocks.forEach((block) => {
-        block.style.display = "none";
+    const selectItems = element
+      .closest(".custom-select_btn")
+      .querySelector(".select-items_btn");
+    selectItems.classList.remove("show");
+  };
+
+  customSelectsBtn.forEach((select) => {
+    const button = select.querySelector(".btn-search");
+    button.addEventListener("click", function (event) {
+      customSelectsBtn.forEach((otherSelect) => {
+        if (otherSelect !== select) {
+          const items = otherSelect.querySelector(".select-items_btn");
+          items.classList.remove("show");
+        }
       });
-      const targetBlock = document.getElementById(targetId);
-      if (targetBlock) {
-        targetBlock.style.display = "grid";
-      }
-      buttons.forEach((btn) => {
-        btn.classList.remove("original-top_item-active");
-      });
-      button.classList.add("original-top_item-active");
+      const items = this.nextElementSibling;
+      items.classList.toggle("show");
+      event.stopPropagation();
     });
   });
-} else {
-  console.warn("Кнопки или контент-блоки не найдены на странице.");
-}
+  window.addEventListener("click", (event) => {
+    customSelectsBtn.forEach((select) => {
+      const items = select.querySelector(".select-items_btn");
+      if (items.classList.contains("show")) {
+        items.classList.remove("show");
+      }
+    });
+  });
+  const customSelects = document.querySelectorAll(".custom-select");
+  customSelects.forEach((select) => {
+    const selectedOption = select.querySelector(".view-block_select");
+    const selectItems = select.querySelector(".select-items");
+
+    if (selectedOption && selectItems) {
+      selectedOption.addEventListener("click", () => {
+        selectItems.classList.toggle("select-show");
+      });
+
+      window.addEventListener("click", (event) => {
+        if (!select.contains(event.target)) {
+          selectItems.classList.remove("select-show");
+        }
+      });
+    }
+  });
+  window.selectOption = function (item, selectedId) {
+    const selectedOption = document.getElementById(selectedId);
+    if (selectedOption) {
+      selectedOption.innerHTML = `${item.innerHTML} ${getSVGIcon()}`;
+      const selectItems = item.closest(".select-items");
+      if (selectItems) {
+        selectItems.classList.remove("select-show"); // Close the panel after selection
+      }
+    } else {
+      console.log("Element not found");
+    }
+  };
+  function getSVGIcon() {
+    return `
+        <svg class="select-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+        </svg>
+      `;
+  }
+});

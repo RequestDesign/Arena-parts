@@ -332,24 +332,50 @@
                         <div class="details-content_main-left">
                             <div class="details-left_top">
                                 <div class="details-left_top-categories">
-                                    <button class="btn-search btn-search_active">Марка
-                                        <svg class="icon-svg_btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg> 
-                                    </button>
+                                    <div class="custom-select_btn">
+                                        <div class="btn-search" id="selected-brand">Марка 
+                                            <svg class="select-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>                                    
+                                        </div>
+                                        <div class="select-items_btn select-hide">
+                                            <div class="select-item" data-value="brand1" onclick="selectOption(this, 'selected-brand')">Марка 1</div>
+                                            <div class="select-item" data-value="brand2" onclick="selectOption(this, 'selected-brand')">Марка 2</div>
+                                            <div class="select-item" data-value="brand3" onclick="selectOption(this, 'selected-brand')">Марка 3</div>
+                                        </div>
+                                    </div>
                                     <div class="vertical-strip"></div>
-                                    <button class="btn-search">Модель
-                                        <svg class="icon-svg_btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg> 
-                                    </button>
+                                
+                                    <div class="custom-select_btn">
+                                        <div class="btn-search" id="selected-model">Модель 
+                                            <svg class="select-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>                                    
+                                        </div>
+                                        <div class="select-items_btn select-hide">
+                                            <div class="select-item" data-value="model1" onclick="selectOption(this, 'selected-model')">Модель 1</div>
+                                            <div class="select-item" data-value="model2" onclick="selectOption(this, 'selected-model')">Модель 2</div>
+                                            <div class="select-item" data-value="model3" onclick="selectOption(this, 'selected-model')">Модель 3</div>
+                                        </div>
+                                    </div>
                                     <div class="vertical-strip"></div>
-                                    <button class="btn-search">Год
-                                        <svg class="icon-svg_btn" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                            <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
-                                        </svg> 
-                                    </button>
+                                
+                                    <div class="custom-select_btn">
+                                        <div class="btn-search" id="selected-year">Год 
+                                            <svg class="select-icon" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M3 7L10 14L17 7" stroke="#121212" stroke-width="1.5" stroke-linecap="round"/>
+                                            </svg>                                    
+                                        </div>
+                                        <div class="select-items_btn select-hide">
+                                            <div class="select-item" data-value="2020" onclick="selectOption(this, 'selected-year')">2020</div>
+                                            <div class="select-item" data-value="2021" onclick="selectOption(this, 'selected-year')">2021</div>
+                                            <div class="select-item" data-value="2022" onclick="selectOption(this, 'selected-year')">2022</div>
+                                            <div class="select-item" data-value="2023" onclick="selectOption(this, 'selected-year')">2023</div>
+                                            <div class="select-item" data-value="2024" onclick="selectOption(this, 'selected-year')">2023</div>
+                                        </div>
+                                    </div>
                                 </div>
+                                
                                 <div class="details-top_categories-btn">
                                     <button class="catalog-btn" id="myCarBtn">Мой автомобиль</button>
                                     <button class="catalog-btn catalog-btn_active" id="catalogBtn">Весь каталог</button>
@@ -474,7 +500,48 @@
                                       </div>
                                     </div>
                                 </div>
-                                  
+                                <div class="twoCircle">
+                                    <div class="twoCircle2">
+                                        <div class="twoCircle3">
+                                          <div class="twoCircle-text">Шины</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="treeCircle">
+                                    <div class="treeCircle2">
+                                        <div class="treeCircle3">
+                                          <div class="treeCircle-text">Капот</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fourCircle">
+                                    <div class="fourCircle2">
+                                        <div class="fourCircle3">
+                                          <div class="fourCircle-text">лобовое стекло</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="fiveCircle">
+                                    <div class="fiveCircle2">
+                                        <div class="fiveCircle3">
+                                          <div class="fiveCircle-text">Шины1</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sixCircle">
+                                    <div class="sixCircle2">
+                                        <div class="sixCircle3">
+                                          <div class="sixCircle-text">Шины2</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="sevenCircle">
+                                    <div class="sevenCircle2">
+                                        <div class="sevenCircle3">
+                                          <div class="sevenCircle-text">Шины3</div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="details-main_rigth-btn">
                                 <div class="custom-select details-select">
