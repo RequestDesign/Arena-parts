@@ -607,6 +607,9 @@ body {
   align-items: center;
   justify-content: center;
 }
+.brand-main_item:hover{
+  background: rgba(216, 224, 233, 1);
+}
 .image-brand {
   width: 4.167vw;
   height: 4.167vw;
