@@ -55,30 +55,102 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const buttons = document.querySelectorAll(".btn-search");
   const dropdowns = document.querySelectorAll(".dropdowns");
+
   if (buttons.length > 0 && dropdowns.length > 0) {
     buttons.forEach((button) => {
       button.addEventListener("click", () => {
-        dropdowns.forEach((dropdown) => {
-          dropdown.style.display = "none";
-        });
-
-        buttons.forEach((btn) => btn.classList.remove("btn-search_active"));
-
-        button.classList.add("btn-search_active");
-
         const target = button.getAttribute("data-target");
         const targetDropdown = document.getElementById(target);
-
-        if (targetDropdown) {
-          targetDropdown.style.display = "flex";
+        if (targetDropdown.style.display === "flex") {
+          targetDropdown.style.display = "none";
+          button.classList.remove("btn-search_active");
         } else {
-          console.log(`Целевой элемент с ID ${target} не найден.`);
+          dropdowns.forEach((dropdown) => {
+            dropdown.style.display = "none";
+          });
+          buttons.forEach((btn) => btn.classList.remove("btn-search_active"));
+          targetDropdown.style.display = "flex";
+          button.classList.add("btn-search_active");
         }
       });
     });
   } else {
     console.log("Кнопки или дропдауны не инициализированы.");
   }
+
+
+
+  const mainBrandContainer = document.querySelector(".main-brand");
+  const showMoreButton = document.querySelector(".arr-bottom_text");
+  const brandContentMain = mainBrandContainer?.querySelector(
+    ".brand-content_main"
+  );
+  if (mainBrandContainer && brandContentMain) {
+    const items = brandContentMain.querySelectorAll(".brand-main_item");
+    let visibleCount,
+      currentVisible = 12,
+      showingAll = false;
+
+    const updateVisibleCount = () => {
+      visibleCount =
+        window.innerWidth >= 769 ? 24 : window.innerWidth <= 48 * 16 ? 12 : 0;
+    };
+    const updateDisplay = () => {
+      items.forEach((item, index) => {
+        item.style.display = index < currentVisible ? "block" : "none";
+      });
+      brandContentMain.classList.toggle("visible", currentVisible > 12);
+    };
+    updateVisibleCount();
+
+    items.forEach((item, index) => {
+      if (index < visibleCount) {
+        item.style.display = "block";
+        currentVisible++;
+      } else {
+        item.style.display = "none";
+      }
+    });
+    showMoreButton.addEventListener("click", (event) => {
+      event.preventDefault();
+      if (!showingAll) {
+        const nextVisibleCount = Math.min(
+          visibleCount,
+          items.length - currentVisible
+        );
+        for (
+          let i = currentVisible;
+          i < currentVisible + nextVisibleCount;
+          i++
+        ) {
+          if (items[i]) items[i].style.display = "block";
+        }
+        currentVisible += nextVisibleCount;
+        if (currentVisible >= items.length) {
+          showMoreButton.textContent = "Скрыть";
+          showingAll = true;
+        }
+      } else {
+        currentVisible = visibleCount;
+        showMoreButton.textContent = "Показать еще";
+        showingAll = false;
+      }
+      updateDisplay();
+    });
+    window.addEventListener("resize", () => {
+      updateVisibleCount();
+      currentVisible = 0;
+      updateDisplay();
+      items.forEach((item, index) => {
+        if (index < visibleCount) {
+          item.style.display = "block";
+          currentVisible++;
+        }
+      });
+    });
+  }
+
+  
 
   // Catalog Menu
   const catalogButton = document.getElementById("catalogButton");
@@ -493,9 +565,8 @@ document.addEventListener("DOMContentLoaded", () => {
     console.warn("Кнопки или контент-блоки не найдены на странице.");
   }
 
-
   const customSelectsBtn = document.querySelectorAll(".custom-select_btn");
-  if (customSelectsBtn.length === 0) return; 
+  if (customSelectsBtn.length === 0) return;
 
   window.selectOption = function (element, selectedId) {
     const selectedValue = element.textContent;
