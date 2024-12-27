@@ -249,7 +249,7 @@ body {
 
 
 .main-block_fon {
-  background-image: url(/assets/images/main/fon-main.png);
+  background-image: url("../assets/images/main/fon-main.png");
   /* на модалке в этом классе .fon-content_main-number */
   background-repeat: no-repeat;
   max-width: 100%;
@@ -4114,7 +4114,7 @@ body {
     background-image: none;
   }
   .fon-content_main-number {
-    background-image: url(/assets/images/main/fon-main.png);
+    background-image: url("../assets/images/main/fon-main.png");
     background-repeat: no-repeat;
     background-position: center 80%;
     background-size: cover;
