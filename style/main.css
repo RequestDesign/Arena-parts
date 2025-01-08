@@ -257,7 +257,7 @@ body {
   display: block;
   border-radius: 16px;
   padding: 46px 21px 23px 21px;
-  background-position: center center;
+  background-position: center -14.4vw;
   background-size: cover;
 }
 .fon-content_top-text {
@@ -269,7 +269,7 @@ body {
   display: flex;
   justify-content: center;
   margin-top: 24px;
-  margin-bottom: 14.607vh;
+  margin-bottom: 9.607vw;
 }
 .fon-top_title {
   font-family: "Sansation";
