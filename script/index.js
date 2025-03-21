@@ -78,8 +78,6 @@ document.addEventListener("DOMContentLoaded", () => {
     console.log("Кнопки или дропдауны не инициализированы.");
   }
 
-
-
   const mainBrandContainer = document.querySelector(".main-brand");
   const showMoreButton = document.querySelector(".arr-bottom_text");
   const brandContentMain = mainBrandContainer?.querySelector(
@@ -149,8 +147,6 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-
-  
 
   // Catalog Menu
   const catalogButton = document.getElementById("catalogButton");
@@ -623,7 +619,7 @@ document.addEventListener("DOMContentLoaded", () => {
       selectedOption.innerHTML = `${item.innerHTML} ${getSVGIcon()}`;
       const selectItems = item.closest(".select-items");
       if (selectItems) {
-        selectItems.classList.remove("select-show"); // Close the panel after selection
+        selectItems.classList.remove("select-show");
       }
     } else {
       console.log("Element not found");
@@ -636,4 +632,69 @@ document.addEventListener("DOMContentLoaded", () => {
         </svg>
       `;
   }
+
+  const menuButtons = document.querySelectorAll(".catalog-menu_btn:not(a)");
+  const contents = document.querySelectorAll(".catalog-menu_toggle");
+  const stillButtons = document.querySelectorAll(
+    ".catalog-menu_block-item_still"
+  );
+  const moreItems = document.querySelectorAll(".catalog-menu_block-item_more");
+
+  function hideAllContents() {
+    contents.forEach((content) => {
+      content.style.display = "none";
+    });
+    menuButtons.forEach((menuButton) => {
+      menuButton.classList.remove("catalog-menu_btn-active");
+    });
+  }
+
+  function showContent(target) {
+    hideAllContents();
+    const activeContent = document.getElementById(target);
+    if (activeContent) {
+      activeContent.style.display = "block";
+    }
+    const activeButton = Array.from(menuButtons).find(
+      (menuButton) => menuButton.dataset.target === target
+    );
+    if (activeButton) {
+      activeButton.classList.add("catalog-menu_btn-active");
+    }
+
+    // Скрываем все дополнительные элементы и сбрасываем текст кнопок "Ещё"
+    moreItems.forEach((moreItem, index) => {
+      moreItem.style.display = "none";
+      stillButtons[index].querySelector(".still-title").textContent = "Ещё";
+    });
+  }
+
+  menuButtons.forEach((menuButton) => {
+    menuButton.addEventListener("click", function () {
+      const target = this.dataset.target;
+      showContent(target);
+    });
+  });
+
+  showContent("content1");
+
+  stillButtons.forEach((button, index) => {
+    button.addEventListener("click", function () {
+      const moreItem = moreItems[index];
+
+      if (moreItem.style.display === "none" || moreItem.style.display === "") {
+        moreItem.style.display = "grid";
+        button.querySelector(".still-title").textContent = "Скрыть";
+      } else {
+        moreItem.style.display = "none";
+        button.querySelector(".still-title").textContent = "Ещё";
+      }
+    });
+  });
+
+
+  const iconButton = document.querySelector(".header-content_icon");
+  iconButton.addEventListener("click", function () {
+    this.classList.toggle("active");
+  });
 });

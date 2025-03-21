@@ -3,6 +3,7 @@
 * {
   margin: 0;
   padding: 0;
+  outline: none;
 }
 body {
   background: white !important;
@@ -82,6 +83,7 @@ body {
   text-decoration-skip-ink: none;
   color: rgba(18, 18, 18, 1);
   border-bottom: 0.104vw solid rgba(0, 0, 0, 0.06);
+  text-decoration: none;
 }
 .catalog-menu_btn-active{
   color: rgba(26, 95, 188, 1);
@@ -144,6 +146,13 @@ body {
   display: flex;
   align-items: center;
   gap: 0.573vw;
+  border: none;
+  background: none;
+  outline: none;
+}
+.catalog-menu_block-item_more{
+  gap: 0.938vw;
+  height: fit-content;
 }
 .still-title {
   font-family: "Sansation";
@@ -157,6 +166,14 @@ body {
 }
 .still-svg {
   width: 0.833vw;
+}
+.catalog-menu_block-item_still:hover{
+  .still-title{
+    color: rgb(154, 154, 154);
+  }
+  .still-svg{
+    stroke: rgb(154, 154, 154);
+  }
 }
 .navbar {
   display: flex;
@@ -221,6 +238,16 @@ body {
   border-radius: 100px;
   background-color: rgba(238, 241, 244, 1);
   text-decoration: none;
+}
+.header-content_icon.active {
+  background-color: rgba(25, 100, 200, 1); 
+}
+.icon-svg path {
+  fill: #1A5FBC; 
+  transition: fill 0.3s; 
+}
+.header-content_icon.active .icon-svg path {
+  fill: #FFFFFF; 
 }
 .icon-svg {
   width: 1.25vw;
@@ -2396,6 +2423,7 @@ body {
   padding: 3.646vw 4.167vw;
   border-radius: 0.833vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 .modal-register {
   display: grid;
@@ -2408,6 +2436,7 @@ body {
   padding: 4vw 5vw;
   border-radius: 0.833vw;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  z-index: 5;
 }
 .modal_title {
   font-family: "Sansation";
@@ -2609,23 +2638,25 @@ body {
   display: flex;
   flex-wrap: wrap;
   text-align: center;
-  gap: 5.417vw;
+  gap: 1.399vw;
+  width: 72.344vw;
 }
 .personalAccountCar-item {
   display: grid;
   gap: 1.927vw;
+  width: 23.177vw;
 }
 .personalAccountCar-item_block {
   display: grid;
   gap: 2.656vw;
 }
 .car-image {
-  width: 23.177vw;
-  height: 9.427vw;
+  width: 21.177vw;
+  height: 9.027vw;
 }
 .personalAccountCar-item_title {
   font-family: "Sansation";
-  font-size: 1.888vw;
+  font-size: 1.488vw;
   font-weight: 400;
   line-height: normal;
   text-align: center;
@@ -2658,6 +2689,7 @@ body {
   align-items: center;
   align-content: center;
   gap: 1.042vw;
+  margin-left: 5.417vw;
 }
 .add-item_plus {
   width: 3.646vw;
@@ -3491,6 +3523,7 @@ body {
 /* original-product_content-bottom */
 .original-product_content-bottom {
   display: flex;
+  align-items: flex-start;
   gap: 2.083vw;
 }
 .original-top_item-text {
@@ -3533,8 +3566,9 @@ body {
 }
 .product_content-bottom_block {
   display: flex;
-  gap: 1.094vw;
+  gap: 1.294vw;
   flex-wrap: wrap;
+  width: 78vw;
 }
 .product_content-bottom-filter.hiddenr {
   max-height: 3.242vw;
@@ -5219,9 +5253,12 @@ body {
   .personalAccountCar-content_main-rigth {
     display: grid;
     gap: 16vw;
+    width: 100%;
+    order: 2;
   }
   .personalAccountCar-item {
     gap: 8.267vw;
+    width: 100%;
   }
   .personalAccountCar-item_block {
     justify-items: center;
@@ -5253,6 +5290,7 @@ body {
   }
   .add-item {
     gap: 5.333vw;
+    margin-left: 0;
   }
   .add-item_text {
     font-size: 4.8vw;
@@ -5299,7 +5337,7 @@ body {
     font-size: 3.467vw;
   }
   .personalAccount-content_main-left {
-    order: 2;
+    order: 1;
   }
   .orders-bottom_item-content {
     display: grid;
@@ -5644,7 +5682,8 @@ body {
   }
   .product_content-bottom_block {
     justify-content: space-between;
-    gap: 2.667vw;
+    gap: 6.667vw;
+    width: 94vw;
   }
   .product_content-bottom-filter-title {
     font-size: 3.733vw;
@@ -5820,7 +5859,7 @@ body {
     display: grid;
     align-items: center;
     justify-content: center;
-    gap: 2.667vw;
+    gap: 4.667vw;
     margin: 20.8vw 0;
   }
   .footer-content_main-block,
@@ -5853,7 +5892,7 @@ body {
   }
   .circle-svg{
     width: 4.267vw;
-    height: 4.267vw;
+    height: 3.267vw;
   }
   .bank-image{
     width:  4.267vw;
